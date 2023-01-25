@@ -43,7 +43,121 @@
       </nav>
     </header>
 
-    <main>
+    <main class="page-content">
+      <section class="promo-slider">
+        <h2 class="visually-hidden">Промо слайдер</h2>
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+
+        <img class="quadcopter" src="" alt="Квадрокоптер">
+        <b>Порхает как бабочка, жалит как пчела!</b>
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <a class="btn" href="#">Подробнее</a>
+        <div class="promo-slider-advantages  promo-slider-advantages-1">
+          <div class="promo-slider-advantages-range  promo-slider-advantages-range-first">800 м</div>
+          <div class="promo-slider-advantages-range  promo-slider-advantages-range-second">50 м</div>
+          <div class="promo-slider-advantages-descr  promo-slider-advantages-descr-first">Дальность полета</div>
+          <div class="promo-slider-advantages-descr  promo-slider-advantages-descr-second">Радиус поражения</div>
+        </div>
+
+        <img class="second item" src="" alt="Второй товар">
+        <b>Слоган для второго товара</b>
+        <p>Описание для второго товара</p>
+        <a class="btn" href="#">Подробнее</a>
+        <div class="promo-slider-advantages  promo-slider-advantages-2">
+          <div class="promo-slider-advantages-range  promo-slider-advantages-range-first">Величина 1</div>
+          <div class="promo-slider-advantages-range  promo-slider-advantages-range-second">Величина 2</div>
+          <div class="promo-slider-advantages-descr  promo-slider-advantages-descr-first">Преимушество 1</div>
+          <div class="promo-slider-advantages-descr  promo-slider-advantages-descr-second">Преимушество 2</div>
+        </div>
+
+        <img class="second item" src="" alt="Второй товар">
+        <b>Слоган для третьего товара</b>
+        <p>Описание для третьего товара</p>
+        <a class="btn" href="#">Подробнее</a>
+        <div class="promo-slider-advantages  promo-slider-advantages-3">
+          <div class="promo-slider-advantages-range  promo-slider-advantages-range-first">Величина 1</div>
+          <div class="promo-slider-advantages-range  promo-slider-advantages-range-second">Величина 2</div>
+          <div class="promo-slider-advantages-descr  promo-slider-advantages-descr-first">Преимушество 1</div>
+          <div class="promo-slider-advantages-descr  promo-slider-advantages-descr-second">Преимушество 2</div>
+        </div>
+
+          <label class="promo-slider-control" for="promo-control-1">
+            <span class="visually-hidden">Первый слайд</span>
+          </label>
+          <label class="promo-slider-control" for="promo-control-2">
+            <span class="visually-hidden">Второй слайд</span>
+          </label>
+          <label class="promo-slider-control" for="promo-control-3">
+            <span class="visually-hidden">Третий слайд</span>
+          </label>
+      </section>
+
+      <section class="main-goods">
+        <h2 class="visually-hidden">Популярные товары</h2>
+        <ul class="main-goods-list">
+          <li class="main-goods-item">
+            <a class="main-goods-item-link" href="#">
+              <img class="main-goods-item-img" src="" alt="Очки VR">
+              <p class="main-goods-item-name">Виртуальная реальность</p>
+            </a>
+          </li>
+          <li class="main-goods-item">
+            <a class="main-goods-item-link" href="#">
+              <img class="main-goods-item-img" src="" alt="Монопод">
+              <p class="main-goods-item-name">Моноподы для селфи</p>
+            </a>
+          </li>
+          <li class="main-goods-item">
+            <a class="main-goods-item-link" href="#">
+              <img class="main-goods-item-img" src="" alt="Экшн-камера">
+              <p class="main-goods-item-name">Экшн-камеры</p>
+            </a>
+          </li>
+          <li class="main-goods-item">
+            <a class="main-goods-item-link" href="#">
+              <img class="main-goods-item-img" src="" alt="Фитнес-браслет">
+              <p class="main-goods-item-name">Фитнес-браслеты</p>
+            </a>
+          </li>
+          <li class="main-goods-item">
+            <a class="main-goods-item-link" href="#">
+              <img class="main-goods-item-img" src="" alt="Умные часы">
+              <p class="main-goods-item-name">Умные часы</p>
+            </a>
+          </li>
+          <li class="main-goods-item">
+            <a class="main-goods-item-link" href="#">
+              <img class="main-goods-item-img" src="" alt="Квадрокоптер">
+              <p class="main-goods-item-name">Квадрокоптеры</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="services-slider">
+            <h2 class="visually-hidden">Наши сервисы</h2>
+            <input class="services-slider-input  visually-hidden" id="services-control-1" type="radio" name="services-control" checked>
+            <input class="services-slider-input  visually-hidden" id="services-control-2" type="radio" name="services-control">
+            <input class="services-slider-input  visually-hidden" id="services-control-3" type="radio" name="services-control">
+            <div class="services-slider-item services-slider-item-delivery">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <div class="services-slider-item  services-slider-item--warranty">
+              <h3>Гарантия</h3>
+              <p>Описание гарантии</p>
+            </div>
+            <div class="services-slider-item  services-slider-item--credit">
+              <h3>Кредит</h3>
+              <p>Описание кредита</p>
+            </div>
+      </section>
+
     </main>
     <footer>
     </footer>
