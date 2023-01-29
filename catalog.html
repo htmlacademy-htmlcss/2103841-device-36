@@ -7,40 +7,42 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-      <a class="page-header-logo"><img src="" alt="DEVICE"></a>
+      <a class="page-header-logo" href="index.html">
+        <img src="" alt="DEVICE">
+      </a>
       <nav class="main-nav">
-        <ul class="main-nav-user-list">
-          <li class="main-nav-user-item main-nav-user-item-search">
-            <form class="main-nav-search" method="get" action="https://echo.htmlacademy.ru">
-              <input class="main-nav-search-input" id="search" type="search" name="search" placeholder="Текст поиска">
-              <button class="main-nav-search-button" type="submit">Найти</button>
+        <ul class="nav-user-list">
+          <li class="nav-user-item">
+            <form class="nav-search" method="get" action="https://echo.htmlacademy.ru">
+              <input class="nav-search-input" id="search" type="search" name="search" placeholder="Текст поиска">
+              <button class="nav-search-button" type="submit">Найти</button>
             </form>
           </li>
-          <li class="main-nav-user-item main-nav-user-item-login">
-            <a class="main-nav-user-link main-nav-user-login" href="#">Коля Петухов</a>
+          <li class="nav-user-item">
+            <a class="nav-user-link" href="#">Коля Петухов</a>
           </li>
-          <li class="main-nav-user-item main-nav-user-item-logoff">
-            <a class="main-nav-user-link main-nav-user-logoff" href="#">Выйти</a>
+          <li class="nav-user-item">
+            <a class="nav-user-link" href="#">Выйти</a>
           </li>
-          <li class="main-nav-user-item main-nav-user-item-compare">
-            <a class="main-nav-user-link main-nav-user-compare" href="#">Сравнить</a>
+          <li class="nav-user-item">
+            <a class="nav-user-link" href="#">Сравнить</a>
           </li>
-          <li class="main-nav-user-item main-nav-user-item-bin">
-            <a class="main-nav-user-link main-nav-user-basket" href="#">Корзина</a>
+          <li class="nav-user-item">
+            <a class="nav-user-link" href="#">Корзина</a>
           </li>
         </ul>
-        <ul class="main-nav-list">
-          <li class="main-nav-item main-nav-item-catalog"></li>
-            <a class="main-nav-link main-nav-link-catalog" href="#">Каталог товаров</a>
+        <ul class="nav-list">
+          <li class="nav-item>
+            <a class="nav-link nav-link-catalog" href="#">Каталог товаров</a>
           </li>
-          <li class="main-nav-item  main-nav-item-delivery">
-            <a class="main-nav-link  main-nav-link-delivery" href="#">Доставка</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Доставка</a>
           </li>
-          <li class="main-nav-item  main-nav-item-warranty">
-            <a class="main-nav-link  main-nav-link-warranty" href="#">Гарантия</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Гарантия</a>
           </li>
-          <li class="main-nav-item  main-nav-item-contacts">
-            <a class="main-nav-link  main-nav-link-contacts" href="#">Контакты</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -49,24 +51,22 @@
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы под селфи</a>
+          </li>
+        </ul>
       </header>
 
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-           <a class="breadcrumbs-link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Моноподы под селфи</a>
-        </li>
-      </ul>
-
       <section class="product-filter">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
-          <span class="filter-title">фильтр:</span>
-
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <span class="filter-title">фильтр:</span>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
@@ -116,66 +116,57 @@
             </ul>
           <button class="button" type="submit">Показать</button>
         </form>
-
         <span class="filter-title">сортировка:</span>
         <select class="select-control" aria-label="Сортировка товара">
           <option value="popular">Популярные</option>
         </select>
-
-        <a class="button select-button" href="#">
+        <a class="sort-button" href="#">
           <span class="visually-hidden">От меньшего к большему</span>
         </a>
-        <a class="button select-button" href="#">
+        <a class="sort-button" href="#">
           <span class="visually-hidden">От большего к меньшему</span>
         </a>
       </section>
 
       <section class="products">
         <h2 class="visually-hidden">Товары</h2>
-
         <ul class="product-list">
           <li class="product-item">
             <a class="product-link" href="#">
               <img class="product-img" src="" alt="">
-              <b class="product-name">Любительская <br>
-                селфи-палка</b>
+              <h3 class="product-title">Любительская селфи-палка</h3>
             </a>
             <span class="product-price">500 ₽</span>
           </li>
           <li class="product-item">
             <a class="product-link" href="#">
               <img class="product-img" src="" alt="">
-              <b class="product-name">Профессиональная <br>
-                селфи-палка</b>
+              <h3 class="product-title">Профессиональная селфи-палка</h3>
             </a>
             <span class="product-price">1 500 ₽</span>
           </li>
           <li class="product-item">
             <a class="product-link" href="#">
               <img class="product-img" src="" alt="">
-              <b class="product-name">Непотопляемая <br>
-                селфи-палка</b>
+              <h3 class="product-title">Непотопляемая селфи-палка</h3>
             </a>
             <span class="product-price">2 500 ₽</span>
           </li>
           <li class="product-item">
             <a class="product-link" href="#">
               <img class="product-img" src="" alt="">
-              <b class="product-name">Селфи-палка «Следуй <br>
-                за мной»</b>
+              <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
             </a>
             <span class="product-price">1 500 ₽</span>
           </li>
         </ul>
-
         <button class="load-more" type="button">Загрузить ещё</button>
-
         <ul class="pagination-list">
           <li class="pagination-item">
-            <a class="pagination-link" href="#">Назад</a>
+            <a class="pagination-link pagination-prev pagination-disabled" href="#">Назад</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">1</a>
+            <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -190,7 +181,7 @@
             <a class="pagination-link" href="#">15</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">Вперед</a>
+            <a class="pagination-link pagination-next" href="#">Вперед</a>
           </li>
         </ul>
       </section>
@@ -204,7 +195,8 @@
         <h2 class="visually-hidden">Адрес</h2>
         <address class="footer-address">
           <p class="footer-address-text">Санкт-Петербург, набережная <br>
-            реки Карповки, 5, литера П.</p>
+            реки Карповки, 5, литера П.
+          </p>
         </address>
       </section>
 
@@ -237,7 +229,6 @@
 
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
-
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="social-button" href="https://t.me/htmlacademy">
