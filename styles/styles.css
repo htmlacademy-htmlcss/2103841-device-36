@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Raleway;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   src: url("../fonts/raleway/raleway-800.woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: Rubik;
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/rubik/rubik-400.woff2);
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: Rubik;
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/rubik/rubik-700.woff2);
@@ -161,4 +161,39 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+}
+
+.main-footer {
+  background: #444444;
+  color: #FFFFFF;
+}
+
+.footer-address-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.footer-menu-title {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.footer-menu-link {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer-address-link {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
