@@ -22,7 +22,27 @@
   font-display: swap;
 }
 
+/*basic styles*/
+html {
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -30,9 +50,97 @@ body {
   background-color: #FFFFFF;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+/*basic styles*/
+
 /*header styles*/
 .page-header {
   background: #FFE17F;
+}
+
+.page-header ul {
+  list-style: none;
+}
+
+.main-nav {
+  width: 1160px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.navigation-catalog-toggler {
+  display: flex;
+  width: 293px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 276px;
+}
+
+.catalog-button-toggler {
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
+}
+
+.nav-search {
+  width: 517px;
+}
+
+.nav-log-in {
+  margin-left: 26px;
+  width: 231px;
+}
+
+.compare-and-basket {
+  width: 240px;
+}
+
+.nav-user-basket-icon {
+  margin-left: 18px;
+}
+
+.nav-user-wrapper {
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.nav-user-list {
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-list {
+  display: flex;
+  padding: 0;
+  gap: 45px;
+}
+
+.nav-item {
+  width: 127px;
+}
+
+.catalog-nav-wrapper {
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.nav-item {
+  margin: 0 auto;
+  width: 127px;
+}
+
+.nav-catalog {
+  margin-right: 276px;
 }
 
 .nav-user-link {
@@ -46,7 +154,21 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 0.2em;
 }
+
+.navigation-main {
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/*header styles*/
 
 /*main index.html styles*/
 .slogan {

@@ -7,46 +7,61 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-      <a class="page-header-logo">
-        <img src="images/icons/logo.svg" width="145" height="36" alt="DEVICE">
-      </a>
       <nav class="main-nav">
-        <ul class="nav-user-list">
-          <li class="nav-user-item">
-            <form class="nav-search" method="get" action="https://echo.htmlacademy.ru">
-              <input class="nav-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
-              <button class="nav-search-button" type="submit">Найти</button>
-            </form>
-          </li>
-          <li class="nav-user-item">
-            <a class="nav-user-link" href="#">Войти</a>
-          </li>
-          <li class="nav-user-item">
-            <a class="nav-user-link" href="#">Сравнить</a>
-          </li>
-          <li class="nav-user-item">
-            <a class="nav-user-link" href="#">Корзина</a>
-          </li>
-        </ul>
-        <ul class="nav-list">
-          <li class="nav-item"></li>
-            <a class="nav-link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Доставка</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Гарантия</a>
-          </li>
-          <li class="main-nav-item">
-            <a class="nav-link" href="#">Контакты</a>
-          </li>
-        </ul>
+          <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
+          <a class="page-header-logo">
+            <img src="images/icons/logo.svg" width="145" height="36" alt="DEVICE">
+          </a>
+          <div class="nav-user-wrapper"></div>
+            <ul class="nav-user-list">
+              <li class="nav-user-item">
+                <form class="nav-search" method="get" action="https://echo.htmlacademy.ru">
+                  <input class="nav-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+                  <button class="nav-search-button" type="submit">Найти</button>
+                </form>
+              </li>
+              <li class="nav-user-item nav-log-in">
+                <a class="nav-user-link" href="#">
+                  <img class="nav-user-login-icon" src="images/icons/enter.svg" width="13" height="12" alt="Иконка логина">
+                  Войти
+                </a>
+              </li>
+              <li class="compare-and-basket">
+                <a class="nav-user-link nav-compare" href="#">
+                  <img class="nav-user-compare-icon" src="images/icons/compare.svg" width="10" height="12" alt="Иконка диаграммы">
+                  Сравнить
+                </a>
+                <a class="nav-user-link nav-basket" href="#">
+                  <img class="nav-user-basket-icon" src="images/icons/cart.svg" width="16" height="14" alt="Иконка тележки">
+                  Корзина
+                </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="catalog-nav-wrapper">
+          <div class="navigation-catalog-toggler nav-link">
+            Каталог товаров
+            <button class="catalog-button-toggler">
+              <img class="nav-icon-toggler" src="images/icons/open-catalog.svg" width="50" height="50" alt="Развернуть каталог">
+            </button>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Доставка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Гарантия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <main class="page-content">
+    <main class="main-container page-content">
       <section class="promo-slider">
         <h2 class="visually-hidden">Промо слайдер</h2>
         <button class="slider-button slider-prev" type="button">
