@@ -73,10 +73,8 @@ body {
 }
 
 .main-nav {
-  width: 1160px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .navigation-catalog-toggler {
@@ -231,9 +229,7 @@ display: flex;
 .main-categories-list {
   display: flex;
   gap: 40px;
-  width: 1160px;
   list-style: none;
-  margin: 0;
   padding: 0;
 
 }
@@ -294,10 +290,7 @@ display: flex;
 
 .delivery {
   display: flex;
-  width: 1160px;
-  height: 100px;
   background: #F0F0F0;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -418,12 +411,31 @@ display: flex;
 }
 
 /*main calatog.html styles*/
-.main-inner {
+.main-catalog-wrapper {
+  display: flex;
   background: #F0F0F0;
+}
+
+.product-filter {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 1316px;
 }
 
 .inner-header {
   background: #FFFFFF;
+}
+
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 16px;
+  width: 429px;
+  height: 20px;
 }
 
 .inner-header-title {
