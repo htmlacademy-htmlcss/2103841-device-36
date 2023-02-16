@@ -39,8 +39,6 @@ html {
 }
 
 body {
-  width: 1440px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -51,9 +49,14 @@ body {
   background-color: #FFFFFF;
 }
 
+.clear-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .main-container {
   flex-grow: 1;
-
 }
 
 .page-container {
@@ -64,88 +67,58 @@ body {
 /*basic styles*/
 
 /*header styles*/
-.page-header {
-  background: #FFE17F;
+.page-header-wrapper {
+  width: 1040px;
+  margin: 0 auto;
 }
 
-.page-header ul {
-  list-style: none;
-}
-
-.main-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-.navigation-catalog-toggler {
-  display: flex;
-  width: 293px;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 276px;
-}
-
-.catalog-button-toggler {
-  background-color: transparent;
-  border-width: 0;
-  padding: 0;
+.header-color {
+background: #FFE17F;
 }
 
 .nav-search {
   width: 517px;
 }
 
-.nav-log-in {
-  margin-left: 26px;
-  width: 231px;
-}
-
-.compare-and-basket {
-  width: 240px;
-}
-
-.nav-user-basket-icon {
-  margin-left: 18px;
-}
-
-.nav-user-wrapper {
-  display: flex;
-  width: 1040px;
-  margin: 0 auto;
-}
-
 .nav-user-list {
   display: flex;
-  width: 1040px;
-  margin: 0 auto;
-  justify-content: space-between;
+}
+
+.nav-log-in {
+  width: 231px;
+  padding-left: 26px;
+}
+
+.nav-compare {
+  padding-left: 26px;
+}
+
+.nav-basket {
+  padding-left: 26px;
+}
+
+.navigation-catalog-toggler {
+  display: flex;
+  max-width: 450px;
   align-items: center;
+  margin-right: auto;
+}
+
+.catalog-button-toggler {
+  background-color: transparent;
+  border-width: 0;
   padding: 0;
+  margin-left: 10px;
 }
 
 .nav-list {
   display: flex;
-  padding: 0;
+  align-items: center;
   gap: 45px;
-}
-
-.nav-item {
-  width: 127px;
 }
 
 .catalog-nav-wrapper {
   display: flex;
-  width: 1040px;
-  margin: 0 auto;
-}
-
-.nav-item {
-  margin: 0 auto;
-  width: 127px;
-}
-
-.nav-catalog {
-  margin-right: 276px;
 }
 
 .nav-user-link {
@@ -161,49 +134,36 @@ body {
   text-decoration: none;
   letter-spacing: 0.2em;
 }
-
-.navigation-main {
-  display: flex;
-  width: 1040px;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-  color: inherit;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-
 /*header styles*/
 
-/*main index.html styles*/
+/*main styles*/
 
 .slider-wrapper {
-display: flex;
+  display: flex;
 }
 
 
-.slogan {
+.advantages-title {
   font-size: 50px;
   line-height: 50px;
 }
 
-.description {
+.advantages-text {
   color: #444444;
+  margin-top: 29px;
+  margin-bottom: 50px;
 }
 
 .advantages-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   width: 560px;
-  gap: 50px;
 }
+
+
 
 .advantages {
   display: flex;
   gap: 20px;
-  width: 307px;
-  height: 72px;
+  margin-top: 60px;
 }
 
 .advantages-value {
@@ -229,13 +189,18 @@ display: flex;
 .main-categories-list {
   display: flex;
   gap: 40px;
-  list-style: none;
-  padding: 0;
-
 }
 
 .main-categories-item-img {
   background-color: #FFE17F;
+}
+
+.slider-pagination {
+  margin-bottom: 70px;
+}
+
+.main-categories {
+  margin-bottom: 70px;
 }
 
 .main-categories-item-link {
@@ -244,27 +209,14 @@ display: flex;
   letter-spacing: -0.02em;
 }
 
+.services-slider {
+  background: #F0F0F0;
+  margin-bottom: 70px;
+}
+
 .slider-text {
   color: #444444;
 }
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
-}
-
-.wrapper p {
-  margin: 0;
-  color: #444444;
-}
-
-.wrapper h3 {
-  margin: 0;
-}
-
-
 
 .services-link-current {
   color: #FFE17F;
@@ -292,6 +244,7 @@ display: flex;
   display: flex;
   background: #F0F0F0;
   align-items: center;
+  margin-bottom: 70px;
 }
 
 .delivery-description {
@@ -312,16 +265,39 @@ display: flex;
 .main-info {
   display: flex;
   gap: 108px;
+  margin-bottom: 70px;
 }
 
 .main-info-title {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin-bottom: 45px;
+}
+
+.about-us-text {
+  margin-bottom: 30px;
+}
+
+.company-list {
+  margin-bottom: 30px;
+}
+
+.contacts-text {
+  margin-bottom: 30px;
+}
+
+.contacts-title {
+  margin-bottom: 30px;
 }
 
 .contacts-address {
   font-style: normal;
+  margin-bottom: 30px;
+}
+
+.contacts-address-text {
+  margin: 0;
 }
 
 .contacts-phone {
@@ -339,8 +315,7 @@ display: flex;
 }
 
 .contacts-schedule-list {
-  list-style: none;
-  padding: 0;
+  margin-bottom: 30px;
 }
 
 .contacts-schedule-item {
@@ -348,9 +323,6 @@ display: flex;
 }
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
-  width: 1440px;
   background: #F0F0F0;
 }
 
@@ -358,23 +330,17 @@ display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 147px;
-  margin-right: 133px;
-}
-
-.subscribe-title {
-  width: 348px;
-  height: 100px;
-  font-family: "Raleway", Arial, sans-serif;
-  font-size: 50px;
-  line-height: 50px;
 }
 
 .subscribe-form-wrapper {
-  width: 1158px;
-  height: 57px;
   display: flex;
-  margin: 144px 141px 56px 141px
+
+}
+
+.subscribe-title {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
 }
 
 .subscribe-form {
@@ -410,7 +376,6 @@ display: flex;
   color: #444444;
 }
 
-/*main calatog.html styles*/
 .main-catalog-wrapper {
   display: flex;
   background: #F0F0F0;
