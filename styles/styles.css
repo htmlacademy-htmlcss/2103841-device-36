@@ -55,6 +55,10 @@ body {
   padding: 0;
 }
 
+.clear-title {
+  margin: 0;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -68,8 +72,8 @@ body {
 
 /*header styles*/
 .page-header-wrapper {
-  width: 1040px;
-  margin: 0 auto;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .header-color {
@@ -158,8 +162,6 @@ background: #FFE17F;
   width: 560px;
 }
 
-
-
 .advantages {
   display: flex;
   gap: 20px;
@@ -183,6 +185,7 @@ background: #FFE17F;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  border: none;
   letter-spacing: 0.2em;
 }
 
@@ -258,8 +261,9 @@ background: #FFE17F;
 }
 
 .delivery-button {
-  width: 125px;
-  height: 100px;
+  padding: 0;
+  margin: auto;
+  border: none;
 }
 
 .main-info {
@@ -334,13 +338,17 @@ background: #FFE17F;
 
 .subscribe-form-wrapper {
   display: flex;
-
+  align-items: center;
 }
 
 .subscribe-title {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
+}
+
+.subscribe-text {
+  color: #444444;
 }
 
 .subscribe-form {
@@ -353,60 +361,40 @@ background: #FFE17F;
 }
 
 .subscribe-button {
-  width: 253px;
-  height: 57px;
+  padding: 18px 39px;
   border: 3px solid #C4C4C4;
-  align-self: center;
 }
 
-.subscribe-text {
-  width: 560px;
-  height: 90px;
+.subscribe-sign {
   color: #444444;
+  margin-left: auto;
 }
 
-.subscribe-free {
-  display: flex;
-  align-self: center;
-  margin-left: 188px;
-  width: 160px;
-  height: 30px;
-  gap: 16px;
-  padding: 0;
-  color: #444444;
+.catalog-header {
+  margin-bottom: 35px;
 }
 
-.main-catalog-wrapper {
-  display: flex;
-  background: #F0F0F0;
-}
 
-.product-filter {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  height: 1316px;
-}
-
-.inner-header {
+.breadcrumbs-header {
+  margin-bottom: 34px;
   background: #FFFFFF;
 }
 
-.breadcrumbs {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0;
-  gap: 16px;
-  width: 429px;
-  height: 20px;
+.breadcrumbs-wrapper {
+  margin-left: 60px;
 }
 
-.inner-header-title {
+.breadcrumbs-title {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .breadcrumbs-link {
@@ -414,6 +402,11 @@ background: #FFE17F;
   line-height: 20px;
   color: #000000;
   text-decoration: none;
+}
+
+.products-wrapper {
+  display: flex;
+  background: #F0F0F0;
 }
 
 .filter-title {
@@ -435,13 +428,23 @@ background: #FFE17F;
   line-height: 20px;
 }
 
-.select-control {
-  font-size: 18px;
-  line-height: 30px;
+.product-cards-filter {
+  display: flex;
+  align-items: center;
 }
 
-.product-link {
-  text-decoration: none;
+.select-control {
+  font-family: "Rubik", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 206px;
+  border: none;
+  background: #F0F0F0;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product-title {
@@ -449,6 +452,10 @@ background: #FFE17F;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
+}
+
+.product-link {
+  text-decoration: none;
 }
 
 .product-price {
@@ -502,8 +509,9 @@ background: #FFE17F;
 /* footer styles */
 .footer-wrapper {
   display: flex;
-  width: 1440px;
-  margin: 0 auto;
+}
+
+.main-footer {
   background: #444444;
   color: #FFFFFF;
 }
