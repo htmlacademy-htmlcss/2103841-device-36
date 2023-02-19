@@ -151,7 +151,6 @@ background: #FFE17F;
   display: flex;
 }
 
-
 .advantages-title {
   font-size: 50px;
   line-height: 50px;
@@ -379,7 +378,6 @@ background: #FFE17F;
   margin-bottom: 35px;
 }
 
-
 .breadcrumbs-header {
   margin-bottom: 34px;
   background: #FFFFFF;
@@ -558,7 +556,6 @@ background: #FFE17F;
   text-align: center;
   text-decoration: none;
   opacity: 0.3
-
 }
 
 .pagination-prev,
