@@ -47,16 +47,14 @@ body {
   line-height: 30px;
   color: #000000;
   background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
 }
 
 .clear-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.clear-title {
-  margin: 0;
 }
 
 .main-container {
@@ -82,7 +80,7 @@ body {
 }
 
 .header-color {
-background: #FFE17F;
+  background: #FFE17F;
 }
 
 .nav-search {
@@ -235,8 +233,6 @@ background: #FFE17F;
 }
 
 .services-description {
-  display: flex;
-  flex-direction: column;
   width: 694px;
 }
 
@@ -391,6 +387,7 @@ background: #FFE17F;
   font-family: "Raleway", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin-top: 0;
   margin-bottom: 16px;
 }
 
@@ -457,6 +454,10 @@ background: #FFE17F;
   padding: 25.5px 0;
 }
 
+.cards-filter-title {
+  margin: 0;
+}
+
 .select-control {
   font-family: "Rubik", Arial, sans-serif;
   font-size: 18px;
@@ -481,6 +482,7 @@ background: #FFE17F;
 
 .products-filter-title {
   padding: 25px 0;
+  margin-top: 0;
   margin-bottom: 35px;
 }
 
@@ -505,6 +507,7 @@ background: #FFE17F;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
+  margin: 0;
 }
 
 .product-link {
@@ -555,7 +558,7 @@ background: #FFE17F;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
-  opacity: 0.3
+  opacity: 0.3;
 }
 
 .pagination-prev,
