@@ -224,6 +224,8 @@ body {
 
 .slider-pagination {
   margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
 }
 
 .main-categories {
