@@ -614,8 +614,6 @@ body {
 
 /* footer styles */
 .footer-wrapper {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 61px;
 }
 
@@ -672,5 +670,5 @@ body {
 .footer-social-list {
   display: flex;
   gap: 15px;
-  margin-right: 390px;
+  margin-right: 360px;
 }
