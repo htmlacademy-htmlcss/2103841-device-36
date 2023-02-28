@@ -84,10 +84,12 @@ body {
 }
 
 .nav-search {
+  position: relative;
   display: flex;
 }
 
-.nav-search-input{
+.nav-search-input {
+  padding: 10px 100px 10px 48px;
   background: #FFE17F;
   border-color: #000000;
   border-width: 2px 0 2px 2px;
@@ -95,6 +97,16 @@ body {
   width: 359px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.nav-search::before {
+  position: absolute;
+  content: "";
+  background-image: url(/images/icons/search-icon.svg);
+  width: 16px;
+  height: 16px;
+  left: 20px;
+  top: 10px;
 }
 
 .nav-search-button {
@@ -112,6 +124,17 @@ body {
 
 .nav-log-in {
   margin-left: 26px;
+  position: relative;
+}
+
+.nav-log-in::before {
+  position: absolute;
+  content: "";
+  background-image: url(/images/icons/enter.svg);
+  width: 13px;
+  height: 12px;
+  left: -26px;
+  top: 9px;
 }
 
 .nav-log-off {
@@ -119,11 +142,11 @@ body {
 }
 
 .nav-compare {
-  margin-left: 26px;
+  margin-left: auto;
 }
 
 .nav-basket {
-  margin-left: auto;
+  margin-left: 26px;
 }
 
 .navigation-catalog-toggler {
@@ -151,6 +174,7 @@ body {
 }
 
 .nav-user-link {
+  position: relative;
   color: #000000;
   text-decoration: none;
 }
