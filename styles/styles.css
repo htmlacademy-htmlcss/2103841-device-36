@@ -84,6 +84,7 @@ body {
 }
 
 .nav-search {
+  width: 517px;
   position: relative;
   display: flex;
 }
@@ -122,31 +123,32 @@ body {
   margin-bottom: 30px;
 }
 
-.nav-log-in {
+.nav-login {
   margin-left: 26px;
-  position: relative;
 }
 
-.nav-log-in::before {
-  position: absolute;
-  content: "";
-  background-image: url(/images/icons/enter.svg);
-  width: 13px;
-  height: 12px;
-  left: -26px;
-  top: 9px;
+.nav-user-login svg {
+  margin-right: 9px;
 }
 
 .nav-log-off {
-  padding-left: 28px;
+  margin-left: 26px;
 }
 
 .nav-compare {
   margin-left: auto;
 }
 
+.nav-user-compare svg {
+  margin-right: 9px;
+}
+
 .nav-basket {
   margin-left: 26px;
+}
+
+.nav-user-basket svg {
+  margin-right: 9px;
 }
 
 .navigation-catalog-toggler {
@@ -187,15 +189,21 @@ body {
   text-decoration: none;
   letter-spacing: 0.2em;
 }
+
+.header-number-image {
+  display: block;
+  margin-left: auto;
+  margin-right: 60px;
+}
 /*header styles*/
 
 /*main styles*/
-
 .slider-wrapper {
   display: flex;
 }
 
 .advantages-title {
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
 }
@@ -208,6 +216,7 @@ body {
 
 .advantages-wrapper {
   width: 560px;
+  margin-left: 40px;
 }
 
 .advantages {
