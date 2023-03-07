@@ -96,7 +96,7 @@ body {
   opacity: 0.3;
 }
 
-.header-logo:focus-visible{
+.header-logo:focus{
   outline: 2px solid #AF4FFF;
   outline-offset: -1px;
 }
@@ -124,8 +124,9 @@ body {
   padding-bottom: 10px;
 }
 
-.nav-search-input:focus {
+.nav-search-input:focus-visible {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .nav-search::before {
@@ -145,8 +146,9 @@ body {
   width: 160px;
 }
 
-.nav-search-button:focus {
+.nav-search-button:focus-visible {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .nav-search-button:hover {
@@ -181,7 +183,7 @@ body {
   opacity: 0.3;
 }
 
-.nav-user-link:focus  {
+.nav-user-link:focus-visible {
   outline: 2px solid #AF4FFF;
 }
 
@@ -219,6 +221,10 @@ body {
   margin-left: 10px;
 }
 
+.nav-icon-toggler:hover {
+  opacity: 0.6;
+}
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -229,7 +235,7 @@ body {
   opacity: 0.6;
 }
 
-.nav-link-state:focus {
+.nav-link-state:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: -1px;
 }
@@ -280,6 +286,20 @@ body {
   box-sizing: border-box;
   background: none;
   cursor: pointer;
+}
+
+.slider-button:hover {
+  opacity: 0.6;
+}
+
+.slider-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: -1px;
+}
+
+.slider-button:active {
+  outline: none;
+  opacity: 0.3;
 }
 
 .slider-prev {
@@ -385,14 +405,102 @@ body {
   letter-spacing: 0.2em;
 }
 
-.main-categories-list {
-  display: flex;
-  gap: 40px;
+.main-categories-item-name {
+  margin: 0;
+  min-height: 60px;
+  position: absolute;
+  bottom: 0;
+  letter-spacing: -0.02em;
+  font-size: 18px;
 }
 
-.main-categories-item-img {
-  background-color: #FFE17F;
+.main-categories-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 70px;
 }
+
+.main-categories-item {
+  min-height: 253px;
+  position: relative;
+}
+
+.main-categories-item::before {
+  content: "";
+  width: 160px;
+  height: 160px;
+  background-color: #ffe17f;
+  position: absolute;
+}
+
+.main-categories-item:hover::before {
+  background-color: #ffc700;
+}
+
+.main-categories-item:active {
+  opacity: 0.3;
+}
+
+.main-categories-item:focus-within {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.vr::before {
+  content: "";
+  background-image: url(/images/icons/virtual-reality.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.monopod::before {
+  content: "";
+  background-image: url(/images/icons/selfie-monopod.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.action-camera::before {
+  content: "";
+  background-image: url(/images/icons/action-camera.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.fitness-bracelet::before {
+  content: "";
+  background-image: url(/images/icons/fitness-bracelet.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.smart-watch::before {
+  content: "";
+  background-image: url(/images/icons/smart-watch.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.quadrocopter::before {
+  content: "";
+  background-image: url(/images/icons/quadrocopter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+/* .main-categories-item-img {
+  background-color: #FFE17F;
+} */
 
 .slider-pagination {
   margin-bottom: 70px;
@@ -469,10 +577,21 @@ body {
 }
 
 .main-info-title {
+  position: relative;
   font-family: "Raleway", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 45px;
+}
+
+.main-info-title::before {
+  position: absolute;
+  content: "";
+  background-color: #000000;
+  width: 84px;
+  height: 7px;
+  left: 0;
+  top: -40px;
 }
 
 .about-us-text {
@@ -486,6 +605,14 @@ body {
 
 .company-item:not(:last-child) {
   margin-bottom: 19px;
+}
+
+.company-item {
+  padding-left: 20px;
+}
+
+.company-item::marker {
+  color: #FFC700;
 }
 
 .contacts-text {
@@ -563,6 +690,7 @@ body {
 
 .subscribe-form {
   display: flex;
+  border-bottom: 3px solid #C4C4C4;
 }
 
 .subscribe-field {
@@ -575,11 +703,23 @@ body {
 .subscribe-button {
   padding: 18px 39px;
   border: 3px solid #C4C4C4;
+  border-bottom: none;
 }
 
 .subscribe-sign {
+  position: relative;
   color: #444444;
   margin-left: auto;
+}
+
+.subscribe-sign::before {
+  position: absolute;
+  content: "";
+  background-image: url(/images/icons/its-free.svg);
+  width: 16px;
+  height: 16px;
+  top: 6px;
+  left: -26px;
 }
 
 .catalog-header {
@@ -827,7 +967,15 @@ body {
 
 .footer-social {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-social::before {
+  content: "";
+  background-color: #FFC700;
+  width: 80px;
+  height: 7px;
 }
 
 .footer-menu-list {
@@ -864,6 +1012,6 @@ body {
 
 .footer-social-list {
   display: flex;
+  margin-left: 84px;
   gap: 15px;
-  margin-right: 360px;
 }
