@@ -85,7 +85,7 @@ body {
 
 .header-logo {
   margin-bottom: 30px;
-  display: block;
+  display: inline-block;
 }
 
 .header-logo:hover {
@@ -96,7 +96,7 @@ body {
   opacity: 0.3;
 }
 
-.header-logo:focus{
+.header-logo:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: -1px;
 }
@@ -219,10 +219,12 @@ body {
   border-width: 0;
   padding: 0;
   margin-left: 10px;
+  opacity: 0.3;
+  cursor: pointer;
 }
 
-.nav-icon-toggler:hover {
-  opacity: 0.6;
+.catalog-button-toggler:hover {
+  opacity: 1;
 }
 
 .nav-list {
@@ -332,6 +334,7 @@ body {
   color: #444444;
   margin-top: 29px;
   margin-bottom: 50px;
+  font-size: 17px;
 }
 
 .advantages-wrapper {
@@ -340,7 +343,7 @@ body {
 }
 
 .advantages-btn {
-  padding: 9.5px 37px;
+  padding: 10px 35px;
 }
 
 .crossing {
@@ -362,6 +365,7 @@ body {
 
 .crossing:hover {
   background-color: #FFE17F;
+  transition: 0.2s ease;
 }
 
 .crossing:focus-visible {
@@ -371,6 +375,7 @@ body {
 
 .crossing:hover:active {
   background-color:#ffcc33;
+  transition: 0.2s ease;
 }
 
 .crossing:disabled {
@@ -427,6 +432,7 @@ body {
 .main-categories-item {
   min-height: 253px;
   position: relative;
+  cursor: pointer;
 }
 
 .main-categories-item::before {
@@ -445,6 +451,7 @@ body {
   opacity: 0.3;
 }
 
+.main-categories-item:focus-visible,
 .main-categories-item:focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
@@ -498,14 +505,70 @@ body {
   position: absolute;
 }
 
-/* .main-categories-item-img {
-  background-color: #FFE17F;
-} */
-
-.slider-pagination {
+.slider-pagination-list {
   margin-bottom: 70px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin-top: -27px;
+}
+
+.slider-pagination-item {
+  margin: 0 10px;
+}
+
+.slider-pagination-button {
+  height: 12px;
+  width: 12px;
+  border: none;
+  background-color:#FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider-pagination-button::after {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.slider-pagination-button:hover {
+  opacity: 0.6;
+  transition: 0.4s;
+}
+
+.slider-pagination-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.slider-pagination-button:active {
+  opacity: 0.3;
+}
+
+.slider-pagination-button:disabled {
+  opacity: 0.1;
+  cursor: default;
+}
+
+.slider-pagination-button-current::after {
+  position: absolute;
+  content: " ";
+  height: 12px;
+  width: 12px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-color: #000000;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
 }
 
 .main-categories {
@@ -548,31 +611,76 @@ body {
 }
 
 .delivery {
-  display: flex;
+/*   display: flex;
+  justify-content: space-between;
+  align-items: center; */
   background: #F0F0F0;
-  align-items: center;
+
   margin-bottom: 70px;
 }
 
-.delivery-description {
-  width: 910px;
-  margin: 0;
+.delivery-button {
+  position: relative;
+  width: 1160px;
+  padding: 40px 0;
   font-family: "Raleway", Arial, sans-serif;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+  cursor: pointer;
+  border: none;
 }
 
-.delivery-button {
-  padding: 0;
-  margin: auto;
-  border: none;
+.delivery-button::before {
+  position: absolute;
+  content: "";
+  background-color: #FFE17F;
+  width: 125px;
+  height: 100%;
+  background-image: url(/images/icons/delivery-car.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 0;
+  left: 0;
+}
+
+.delivery-button::after {
+  position: absolute;
+  content: "";
+  width: 125px;
+  height: 100%;
+  background-image: url(/images/icons/info.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 0;
+  right: 0;
+  opacity: 0.3;
+}
+
+.delivery-button:hover.delivery-button::before {
+  background-color: #FFC700;
+  transition: 0.3s ease;
+}
+
+.delivery-button:hover.delivery-button::after {
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.delivery-button:active {
+  opacity: 0.3;
+  transition: 0.3s ease;
+}
+
+.delivery-button:focus-visible {
+  outline:2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .main-info {
   display: flex;
-  gap: 108px;
   margin-bottom: 70px;
 }
 
@@ -594,6 +702,10 @@ body {
   top: -40px;
 }
 
+.main-info-link {
+  padding: 10px 25px;
+}
+
 .about-us-text {
   margin-bottom: 30px;
   color: #444444;
@@ -613,6 +725,10 @@ body {
 
 .company-item::marker {
   color: #FFC700;
+}
+
+.contacts-wrapper{
+  margin-left: 108px;
 }
 
 .contacts-text {
@@ -690,20 +806,46 @@ body {
 
 .subscribe-form {
   display: flex;
-  border-bottom: 3px solid #C4C4C4;
 }
 
 .subscribe-field {
   width: 557px;
-  height: 55px;
+  height: 61px;
   border: none;
   background: #F0F0F0;
+  border-bottom: 3px solid #C4C4C4;
+
+}
+
+.subscribe-field:focus-visible {
+  outline: none;
 }
 
 .subscribe-button {
+  cursor: pointer;
   padding: 18px 39px;
   border: 3px solid #C4C4C4;
-  border-bottom: none;
+}
+
+.subscribe-crossing:hover {
+  background-color: #000000;
+  border: 3px solid #000000;
+  color: #FFFFFF;
+  transition: 0.2s ease;
+}
+
+.subscribe-crossing:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: -1px;
+}
+
+.subscribe-crossing:active {
+  border: 3px solid #C4C4C4;
+}
+
+.subscribe-crossing:hover:active .subscribe-button-text {
+  opacity: 0.3;
+  transition: 0.2s ease;
 }
 
 .subscribe-sign {
@@ -745,11 +887,22 @@ body {
 
 .breadcrumbs-list {
   display: flex;
-  align-items: center;
-  gap: 16px;
+}
+
+.breadcrumbs-item {
+  margin-right: 36px;
+  position: relative;
+}
+
+.breadcrumbs-item:not(:first-child)::before {
+  position: absolute;
+  content: url("/images/icons/breadcrumbs-icon.svg");
+  left: -20px;
+  top: -7px;
 }
 
 .breadcrumbs-link {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
@@ -790,9 +943,10 @@ body {
 }
 
 .filter-btn {
-  margin-left: 60px;
-  margin-right: 40px;
-  padding: 0;
+  padding-left: 60px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .product-cards {
