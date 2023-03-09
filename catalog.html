@@ -41,7 +41,7 @@
                 </a>
               <li class="nav-user-item nav-basket">
                 <a class="nav-user-link nav-user-basket" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg"width="16" height="14" viewBox="0 0 16 14" fill="none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
                     <path fill="black" d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z"/>
                     </svg>
                   Корзина
@@ -203,12 +203,9 @@
                   </a>
                 </li>
               </ul>
-              <button class="load-more-btn crossing" type="button">Загрузить ещё</button>
-              <ul class="clear-list pagination-list">
-                <li class="pagination-item pagination-item-prev">
-                  <a class="pagination-prev pagination-disabled" href="#">Назад</a>
-                </li>
-                <li class="pagination-item">
+              <button class="load-more-btn load-more-crossing" type="button">Загрузить ещё</button>
+              <div class="pagination-list-wrapper">
+                <a class="pagination-prev pagination-btn pagination-disabled" href="#">Назад</a>
                   <ul class="clear-list pagination-list-pages">
                     <li class="pagination-item">
                       <a class="pagination-link pagination-current">1</a>
@@ -226,11 +223,8 @@
                       <a class="pagination-link" href="#">15</a>
                     </li>
                   </ul>
-                </li>
-                <li class="pagination-itempagination-item-next">
-                  <a class="pagination-next" href="#">Вперед</a>
-                </li>
-              </ul>
+                <a class="pagination-btn pagination-next" href="#">Вперед</a>
+              </div>
             </div>
           </div>
           </div>
