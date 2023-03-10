@@ -7,13 +7,13 @@
     <base href="https://htmlacademy-htmlcss.github.io/2103841-device-36/8/">
 </head>
   <body>
-    <header class="page-header">
-      <div class="header-color page-container">
-        <nav class="main-nav page-header-wrapper">
-          <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-          <a class="header-logo" href="#">
-            <img class="header-logo-img" src="images/icons/logo.svg" width="145" height="36" alt="DEVICE">
-          </a>
+    <header class="page-container page-header">
+      <div class="page-header-wrapper">
+        <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
+        <a class="header-logo" href="#">
+        <img class="header-logo-img" src="images/icons/logo.svg" width="145" height="36" alt="DEVICE">
+        </a>
+        <nav class="main-nav">
           <ul class="clear-list nav-user-list">
             <li class="nav-user-item">
               <form class="nav-search" method="get" action="https://echo.htmlacademy.ru">
@@ -67,7 +67,6 @@
             </ul>
           </div>
         </nav>
-        <img class="header-number-image" src="images/slider/01-header-number.png" width="192" height="130" alt="">
       </div>
     </header>
 
@@ -90,7 +89,7 @@
           <div class="slider-wrapper">
             <img class="quadcopter" src="images/slider/quadrocopter.png" width="560" height="560" alt="Квадрокоптер">
             <div class="advantages-wrapper">
-              <b class="advantages-title">Порхает как бабочка, жалит как пчела!</b>
+              <h3 class="advantages-title">Порхает как бабочка, жалит как пчела!</h3>
               <p class="advantages-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="btn advantages-btn crossing" href="#">Подробнее</a>
               <div class="advantages">
@@ -108,7 +107,7 @@
           <div class="slider-wrapper">
             <img class="fit-band" src="images/slider/fit-band.png" width="560" height="560" alt="Фитнес-браслет">
             <div class="advantages-wrapper">
-              <b class="advantages-title">Худеем правильно!</b>
+              <h3 class="advantages-title">Худеем правильно!</h3>
               <p class="advantages-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class="btn advantages-btn crossing" href="#">Подробнее</a>
               <div class="advantages">
@@ -122,7 +121,7 @@
           <div class="slider-wrapper">
             <img class="selfie-stick" src="images/slider/selfie-stick.png" width="560" height="560" alt="Селфи-палка">
             <div class="advantages-wrapper">
-              <b class="advantages-title">Делай селфи, как Бен Стиллер!</b>
+              <h3 class="advantages-title">Делай селфи, как Бен Стиллер!</h3>
               <p class="advantages-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               <a class="btn advantages-btn crossing" href="#">Подробнее</a>
               <div class="advantages">
@@ -166,33 +165,33 @@
         <div class="main-categories-wrapper page-container">
           <h2 class="visually-hidden">Основные категории</h2>
           <ul class="clear-list main-categories-list">
-            <li class="main-categories-item vr">
-              <a class="main-categories-item-link" href="#">
+            <li class="main-categories-item">
+              <a class="main-categories-item-link main-categories-item-vr" href="#">
                 <p class="main-categories-item-name">Виртуальная реальность</p>
               </a>
             </li>
-            <li class="main-categories-item monopod">
-              <a class="main-categories-item-link" href="#">
+            <li class="main-categories-item">
+              <a class="main-categories-item-link main-categories-item-monopod" href="#">
                 <p class="main-categories-item-name">Моноподы для селфи</p>
               </a>
             </li>
-            <li class="main-categories-item action-camera">
-              <a class="main-categories-item-link" href="#">
+            <li class="main-categories-item">
+              <a class="main-categories-item-link main-categories-item-action-camera" href="#">
                 <p class="main-categories-item-name">Экшн-камеры</p>
               </a>
             </li>
-            <li class="main-categories-item fitness-bracelet">
-              <a class="main-categories-item-link" href="#">
+            <li class="main-categories-item">
+              <a class="main-categories-item-link main-categories-item-fitness-bracelet" href="#">
                 <p class="main-categories-item-name">Фитнес-браслеты</p>
               </a>
             </li>
-            <li class="main-categories-item smart-watch">
-              <a class="main-categories-item-link" href="#">
+            <li class="main-categories-item">
+              <a class="main-categories-item-link main-categories-item-smart-watch" href="#">
                 <p class="main-categories-item-name">Умные часы</p>
               </a>
             </li>
-            <li class="main-categories-item quadrocopter">
-              <a class="main-categories-item-link" href="#">
+            <li class="main-categories-item">
+              <a class="main-categories-item-link main-categories-item-quadrocopter" href="#">
                 <p class="main-categories-item-name">Квадрокоптеры</p>
               </a>
             </li>
@@ -281,7 +280,7 @@
         </div>
       </section>
       <section class="subscribe">
-        <div class="page-container">
+        <div class="subscribe-container page-container">
           <div class="subscribe-wrapper">
             <h2 class="subscribe-title">Подпишитесь<br> на рассылку</h2>
             <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,
