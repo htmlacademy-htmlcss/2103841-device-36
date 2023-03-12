@@ -284,7 +284,7 @@ button {
 
 .exit-link-span {
   opacity: 0.3;
-  padding-left: 28px;
+  padding-left: 12px;
 }
 
 .nav-links-item:nth-child(2){
@@ -476,24 +476,57 @@ button {
 /*main styles*/
 
 .promo-slider {
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: -150px;
   margin-bottom: 70px;
 }
 
-.slider-wrapper {
-  position: relative;
+.slider-list {
+  display: flex;
 }
 
-.slider-img {
-  display: block;
-  margin-top: -120px;
+.slide-item-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 560px 600px;
+  grid-template-rows: 560px;
+}
+
+.slide-image-wrapper {
+  display: grid;
+  grid-template-columns: 560px 600px;
+  grid-template-rows: 560px;
+}
+
+.slide-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-left: 40px;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.slide-number {
+  text-align: end;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color:#ffffff;
+  background-color: #FFE17F;
+  padding-right: 49px;
+  padding-bottom: 5px;
+  padding-top: 85px;
 }
 
 .slider-control {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  top: 25%;
-  width: 100%;
+  top: 40%;
+  width: 560px;
   transform: translateY(-50%);
 }
 
@@ -511,9 +544,6 @@ button {
   margin-left: 30px;
   transform: rotate(180deg);
 }
-
-/* .slider-next {
-} */
 
 .slider-button:hover {
   opacity: 0.6;
@@ -575,8 +605,7 @@ button {
   z-index: -1;
 }
 
-.advantages-title {
-  display: block;
+.slide-title {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -584,9 +613,9 @@ button {
   margin-bottom: 30px;
 }
 
-.advantages-text {
+.slide-text {
   color: #444444;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .advantages-wrapper {
@@ -594,16 +623,16 @@ button {
   margin-left: 40px;
 }
 
-.advantages-btn {
-  display: inline-block;
-  margin-top: 60px;
-  margin-bottom: 60px;
+.slide-btn {
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding: 10px 35px;
+  width: 220px;
+  height: 40px;
 }
 
 .crossing {
   position: relative;
-  cursor: pointer;
   z-index: 0;
 }
 
@@ -640,7 +669,7 @@ button {
   cursor: auto;
 }
 
-.advantages {
+.slide-advantages {
   display: flex;
   gap: 20px;
 }
@@ -654,10 +683,13 @@ button {
 
 .advantages-description {
   color: #444444;
+  font-size: 16px;
 }
 
 .btn {
   color: #000000;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -667,6 +699,7 @@ button {
   background: none;
   border: none;
   letter-spacing: 0.2em;
+  overflow: hidden;
 }
 
 .main-categories {
@@ -749,10 +782,15 @@ button {
   background-image: url(../images/icons/quadrocopter.svg);
 }
 
+
+
 .slider-pagination-list {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  right: 46%;
+  bottom: 0;
 }
 
 .slider-pagination-item {
