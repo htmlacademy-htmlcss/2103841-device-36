@@ -6,71 +6,74 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="catalog-header page-container">
-      <div class="header-color page-container">
-        <nav class="main-nav page-header-wrapper">
-            <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-            <a class="header-logo" href="index.html">
-              <img class="header-logo-img" src="images/icons/logo.svg" width="145" height="36" alt="DEVICE">
-            </a>
-            <ul class="clear-list nav-user-list">
-              <li class="nav-user-item">
-                <form class="nav-search" method="get" action="https://echo.htmlacademy.ru">
-                  <input class="nav-search-input" id="search" type="search" name="search" placeholder="Текст поиска">
-                  <button class="nav-search-button" type="submit"><span class="search-button-text">Найти</span></button>
-                </form>
-              </li>
-              <li class="nav-user-item nav-login">
-                <a class="nav-user-link nav-user-login" href="#">
-                  <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none" >
-                    <path fill="black"
-                          d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z" />
-                  </svg>
-                  Коля Петухов
-                </a>
-                <a class="nav-user-link nav-log-off" href="#">Выйти</a>
-              </li>
-              <li class="nav-user-item nav-compare">
-                <a class="nav-user-link nav-user-compare" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
-                    <path d="M6 0H4V12H6V0Z" fill="black"/>
-                    <path d="M2 4H0V12H2V4Z" fill="black"/>
-                    <path d="M10 3H8V12H10V3Z" fill="black"/>
-                  </svg>
-                  Сравнить
-                </a>
-              <li class="nav-user-item nav-basket">
-                <a class="nav-user-link nav-user-basket" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                    <path fill="black" d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z"/>
-                    </svg>
-                  Корзина
-                </a>
-              </li>
-            </ul>
-
-            <div class="catalog-nav-wrapper">
-              <div class="navigation-catalog-toggler nav-link">
-                Каталог товаров
-                <button class="catalog-button-toggler">
-                  <img class="nav-icon-toggler" src="images/icons/open-catalog.svg" width="50" height="50" alt="Развернуть каталог">
-                </button>
+    <header class="catalog-header-container page-header">
+      <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
+      <a class="header-logo header-logo-link focus-visible-outline" href="index.html">
+        <img src="images/icons/logo.svg" width="145" height="36" alt="DEVICE">
+      </a>
+      <nav class="navigation">
+        <div class="search-and-user-container">
+          <section class="navigation-search">
+            <h2 class="visually-hidden">Поиск по сайту.</h2>
+            <form class="nav-search-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="search-input-container">
+                <input class="nav-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
               </div>
-              <ul class="clear-list nav-list">
-                <li class="nav-item">
-                  <a class="nav-link nav-link-state" href="#">Доставка</a>
+              <div class="search-button-container">
+                <button class="nav-search-button" type="submit"><span class="button-text">Найти</span></button>
+              </div>
+            </form>
+          </section>
+          <ul class="clear-list nav-links-list">
+            <li class="nav-links-item nav-login">
+              <a class="nav-link nav-login-link focus-visible-outline" href="#">Костя Петухов</a>
+              <span class="exit-link-span">Выйти</span>
+            <li class="nav-links-item">
+              <a class="nav-link nav-compare-link focus-visible-outline" href="#">Сравнить</a>
+            <li class="nav-button-item">
+              <button class="nav-link nav-basket-button nav-link-button focus-visible-outline">
+                <img class="number-two-icon" src="/images/icons/basket-and-number.svg" alt="Иконка количества товаров в корзине.">
+                Корзина
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown-and-advantages-container">
+          <section class="navigation-dropdown">
+            <h2 class="visually-hidden">Выпадающее меню каталога товаров.</h2>
+            <input class="navigation-dropdown-input" type="checkbox" id="navigation-dropdown-input">
+            <label class="navigation-dropdown-button focus-visible-outline" tabindex="0" for="navigation-dropdown-input">Каталог товаров</label>
+            <div class="navigation-dropdown-list-container">
+              <ul class="clear-list navigation-dropdown-list">
+                <li class="navigation-dropdown-item">
+                  <a class="navigation-dropdown-link focus-visible-outline" href="#">Виртуальная реальность</a><br>
+                  <a class="navigation-dropdown-link focus-visible-outline" href="/catalog.html">Моноподы для селфи</a><br>
+                  <a class="navigation-dropdown-link focus-visible-outline" href="#">Экшн-камеры</a><br>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-state" href="#">Гарантия</a>
+                <li class="navigation-dropdown-item">
+                  <a class="navigation-dropdown-link focus-visible-outline" href="#">Фитнес-браслеты</a><br>
+                  <a class="navigation-dropdown-link focus-visible-outline" href="#">Умные часы</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-state" href="#">Контакты</a>
+                <li class="navigation-dropdown-item focus-visible-outline">
+                  <a class="navigation-dropdown-link"href="#">Квадракоптеры</a>
                 </li>
               </ul>
             </div>
-        </nav>
-      </div>
-    </header>
+          </section>
+          <ul class="clear-list advantages-list">
+            <li class="advantages-item">
+              <a class="advantages-link focus-visible-outline" href="#">Доставка</a>
+            </li>
+            <li class="advantages-item">
+              <a class="advantages-link focus-visible-outline" href="#">Гарантия</a>
+            </li>
+            <li class="advantages-item">
+              <a class="advantages-link focus-visible-outline" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
 
     <main class="main-container main-inner">
       <header class="breadcrumbs-header">
