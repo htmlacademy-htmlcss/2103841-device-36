@@ -97,26 +97,26 @@
               </div>
             </div>
             <div class="slider-control">
-              <button class="slider-button slider-prev" type="button">
+              <button class="slider-button slider-prev focus-visible-outline" type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
               </button>
-              <button class="slider-button slider-next" type="button">
+              <button class="slider-button slider-next focus-visible-outline" type="button">
                 <span class="visually-hidden">Следующий слайд</span>
               </button>
             </div>
             <ol class="clear-list slider-pagination-list">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <button class="slider-pagination-button focus-visible-outline slider-pagination-button-current" type="button">
                   <span class="visually-hidden">Первый слайд</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="slider-pagination-button focus-visible-outline" type="button">
                   <span class="visually-hidden">Второй слайд</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="slider-pagination-button focus-visible-outline" type="button">
                   <span class="visually-hidden">Третий слайд</span>
                 </button>
               </li>
@@ -139,26 +139,26 @@
               </div>
             </div>
             <div class="slider-control">
-              <button class="slider-button slider-prev" type="button">
+              <button class="slider-button slider-prev focus-visible-outline" type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
               </button>
-              <button class="slider-button slider-next" type="button">
+              <button class="slider-button slider-next focus-visible-outline" type="button">
                 <span class="visually-hidden">Следующий слайд</span>
               </button>
             </div>
             <ol class="clear-list slider-pagination-list">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <button class="slider-pagination-button focus-visible-outline slider-pagination-button-current" type="button">
                   <span class="visually-hidden">Первый слайд</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="slider-pagination-button focus-visible-outline" type="button">
                   <span class="visually-hidden">Второй слайд</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="slider-pagination-button focus-visible-outline" type="button">
                   <span class="visually-hidden">Третий слайд</span>
                 </button>
               </li>
@@ -189,26 +189,26 @@
               </div>
             </div>
             <div class="slider-control">
-              <button class="slider-button slider-prev" type="button">
+              <button class="slider-button slider-prev focus-visible-outline" type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
               </button>
-              <button class="slider-button slider-next" type="button">
+              <button class="slider-button slider-next focus-visible-outline" type="button">
                 <span class="visually-hidden">Следующий слайд</span>
               </button>
             </div>
             <ol class="clear-list slider-pagination-list">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <button class="slider-pagination-button focus-visible-outline slider-pagination-button-current" type="button">
                   <span class="visually-hidden">Первый слайд</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="slider-pagination-button focus-visible-outline" type="button">
                   <span class="visually-hidden">Второй слайд</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="slider-pagination-button focus-visible-outline" type="button">
                   <span class="visually-hidden">Третий слайд</span>
                 </button>
               </li>
@@ -256,46 +256,69 @@
       </section>
 
       <section class="services-slider">
-        <div class="page-container">
-          <ul class="clear-list services-list">
+        <div class="page-container services-slider-container">
+          <ol class="clear-list services-list">
             <li class="services-item">
-              <a class="btn services-link services-link-current" href="#">Доставка</a>
+              <ol class= "clear-list services-button-list">
+                <li class="services-button-item services-active-button-item">
+                  <button class="services-active-button" type="button" disabled>Доставка</button>
+                </li>
+                <li class="services-button-item">
+                  <button class="crossing services-button focus-visible-outline" type="button">Гарантия</button>
+                </li>
+                <li class="services-button-item">
+                  <button class="crossing services-button focus-visible-outline" type="button">Гарантия</button>
+                </li>
+              </ol>
+              <div class="services-slider-text-container service-slider-text-container-delivery">
+                  <h3 class="services-slider-title">Доставка</h3>
+                  <p class="services-slider-text">Мы с удовольствием доставим ваш товар <br>прямо к вашему подъезду совершенно бесплатно!
+                      Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.
+                  </p>
+              </div>
+              <div class="delivery-guy-img-container"></div>
             </li>
             <li class="services-item">
-              <a class="btn services-link crossing" href="#">Гарантия</a>
+              <ol class= "clear-list services-button-list">
+                <li class="services-button-item">
+                  <button class="crossing services-button focus-visible-outline" type="button">Доставка</button>
+                </li>
+                <li class="services-button-item services-active-button-item">
+                  <button class="services-active-button" type="button" disabled>Гарантия</button>
+                </li>
+                <li class="services-button-item">
+                  <button class="crossing services-button focus-visible-outline" type="button">Гарантия</button>
+                </li>
+              </ol>
+              <div class="services-slider-text-container service-slider-text-container-warranty">
+                  <h3 class="services-slider-title">Гарантия</h3>
+                  <p class="services-slider-text">Если из-за возгарания купленного у нас товара у вас <br>сгорит дом - не
+                    переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.
+                  </p>
+              </div>
+              <div class="warranty-img-container"></div>
             </li>
             <li class="services-item">
-              <a class="btn services-link crossing" href="#">Кредит</a>
+              <ol class= "clear-list services-button-list">
+                <li class="services-button-item">
+                  <button class="crossing services-button focus-visible-outline" type="button">Доставка</button>
+                </li>
+                <li class="services-button-item">
+                  <button class="crossing services-button focus-visible-outline" type="button">Гарантия</button>
+                </li>
+                <li class="services-button-item services-active-button-item">
+                  <button class="services-active-button" type="button" disabled>Гарантия</button>
+                </li>
+              </ol>
+              <div class="services-slider-text-container service-slider-text-container-credit">
+                  <h3 class="services-slider-title">Кредит</h3>
+                  <p class="services-slider-text">Залезть в долговую яму стало проще! Кредитные <br>консультанта подберут для
+                    вас наиболее выгодняе <br>условия кредита. Выгодные для банка, разумеется.</p>
+                  </p>
+              </div>
+              <div class="credit-card-img-container"></div>
             </li>
-          </ul>
-          <h2 class="visually-hidden">Наши сервисы</h2>
-          <div class="services-slider-item services-slider-item-delivery">
-            <div class="services-slider-wrapper">
-              <div class="services-description">
-                <h3 class="slider-title">Доставка</h3>
-                <p class="slider-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              </div>
-              <img class="delivery-guy-img" src="images/icons/delivery-guy.svg" width="136" height="164" alt="Доставщик">
-            </div>
-          </div>
-          <div class="services-slider-item  services-slider-item-warranty">
-            <div class="services-slider-wrapper">
-              <div class="services-description">
-                <h3 class="slider-title">Гарантия</h3>
-                <p class="slider-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-              </div>
-              <img class="warranty-img" src="images/icons/warranty.svg" width="171" height="195" alt="Звонок в ганатию">
-            </div>
-          </div>
-          <div class="services-slider-item  services-slider-item-credit">
-            <div class="services-slider-wrapper">
-              <div class="services-description">
-                <h3 class="slider-title">Кредит</h3>
-                <p class="slider-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-              </div>
-              <img class="warranty-img" src="images/icons/credit.svg" width="156" height="188" alt="Кошелек на спине">
-            </div>
-          </div>
+          </ol>
         </div>
       </section>
 
