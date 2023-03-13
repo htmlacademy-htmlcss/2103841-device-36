@@ -73,97 +73,141 @@
           </ul>
         </div>
       </nav>
-  </header>
+    </header>
+    <header class="breadcrumbs-header">
+      <h1 class="breadcrumbs-title">Моноподы для селфи</h1>
+      <ol class="clear-list breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link focus-visible-outline" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link focus-visible-outline" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link focus-visible-outline" href="#">Моноподы под селфи</a>
+        </li>
+      </ol>
+    </header>
+    <main class="main-catalog">
+      <div class="main-catalog-container page-container">
+        <aside class="catalog-aside">
+          <form class="aside-filter-panel" action="https://echo.htmlacademy.ru/" method="get"></form>
+            <h2 class="aside-title">фильтр:</h2>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость</legend>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 119px;">
+                    <button class="range-toggle toggle-min focus-visible-outline">
+                      <span class="visually-hidden">-</span>
+                    </button>
+                    <button class="range-toggle toggle-max focus-visible-outline">
+                      <span class="visually-hidden">+</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от <input class="range-input" type="number" value="0" name="min-price">
+                  </label>
+                  <label class="catalog-filter-label">
+                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 45px;">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Цвет</legend>
+              <ul class="clear-list catalog-filter-list">
+                <li class="catalog-filter-item color-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Черный</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item color-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Белый</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item color-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="blue">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Синий</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item color-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="red">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Красный</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item color-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="pink">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Розовый</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Bluetooth</legend>
+              <ul class="clear-list catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="bluetooth-control">
+                    <input class="visually-hidden control-input" type="radio" name="bluetooth-option" value="yes" checked>
+                    <span class="bluetooth-control-mark"></span>
+                    <span class="control-label">Есть</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="bluetooth-option" value="no">
+                    <span class="bluetooth-control-mark"></span>
+                    <span class="control-label">Нет</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="btn filter-btn crossing focus-visible-outline" type="submit">Показать</button>
+          </form>
+        </aside>
 
-    <main class="main-container main-inner">
-      <header class="breadcrumbs-header">
-        <div class="page-container">
-          <div class="breadcrumbs-wrapper">
-            <h1 class="breadcrumbs-title">Моноподы для селфи</h1>
-            <ul class="clear-list breadcrumbs-list">
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">Главная</a>
-              </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Моноподы под селфи</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <section class="products">
-        <div class="products-wrapper page-container">
-          <div class="products-filter">
-            <h2 class="products-filter-title filter-title">фильтр:</h2>
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Стоимость</legend>
-              </fieldset>
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Цвет</legend>
-                <ul class="clear-list catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="black" checked> Черный
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="white" checked> Белый
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="blue"> Синий
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="red"> Красный
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="pink"> Розовый
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Bluetooth</legend>
-                <ul class="clear-list catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="bluetooth-option" value="yes" checked> Есть
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="bluetooth-option" value="no"> Нет
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <button class="btn filter-btn crossing" type="submit">Показать</button>
-            </form>
-          </div>
-          <div class="product-cards">
-          <div class="cards-filter">
-            <div class="product-container cards-filter-wrapper">
-                <h2 class="cards-filter-title filter-title">сортировка:</h2>
-                <select class="select-control" aria-label="Сортировка:">
-                  <option value="popular">Популярные</option>
+        <div class="product-cards">
+          <div class="cards-sorting">
+              <h2 class="cards-filter-title filter-title">сортировка:</h2>
+              <form class="cards-sorting-form" action="https://echo.htmlacademy.ru/" method="post">
+                <select class="cards-sorting-select focus-visible-outline" aria-label="Сортировка:">
+                  <option class="cards-sorting-popular" value="popular">Популярные</option>
                 </select>
-                <a class="sort-button" href="#">
+              </form>
+              <div class="sorting-buttons-container">
+                <button class="sort-buttons sort-up focus-visible-outline" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
+                    <g clip-path="url(#a)">
+                      <path d="m6 0 5.5 10H.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path d="M.5 0h11v10H.5z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
                   <span class="visually-hidden">От меньшего к большему</span>
-                </a>
-                <a class="sort-button" href="#">
+                </button>
+                <button class="sort-buttons sort-down focus-visible-outline" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
+                    <path d="M6 10 .5 0h11" />
+                  </svg>
                   <span class="visually-hidden">От большего к меньшему</span>
-                </a>
-            </div>
+                </button>
+              </div>
           </div>
           <div class="product-main">
             <div class="product-container">
@@ -230,11 +274,9 @@
               </div>
             </div>
           </div>
-          </div>
         </div>
-      </section>
+      </div>
     </main>
-
 
     <div class="page-footer-container">
       <footer class="page-footer">
