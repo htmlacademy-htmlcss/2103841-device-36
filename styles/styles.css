@@ -85,7 +85,7 @@ button {
   width: 1040px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 150px;
+  padding-bottom: 130px;
 }
 
 .catalog-header-container {
@@ -175,7 +175,7 @@ button {
 .nav-search-input {
   position: relative;
   background: none;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   padding: 10px 0;
@@ -189,6 +189,10 @@ button {
 .nav-search-input::placeholder {
   color: #000000;
   opacity: 0.3;
+}
+
+.nav-search-input-catalog::placeholder {
+  opacity: 1;
 }
 
 .nav-search-input:placeholder-shown {
@@ -213,7 +217,7 @@ button {
   border: 2px solid #000000;
   border-radius: 0 25px 25px 0;
   width: 160px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
@@ -386,6 +390,8 @@ button {
   content: url("../images/icons/plus-dropdown.svg");
   padding-left: 7px;
   opacity: 0.3;
+  width: 50px;
+  height: 50px;
 }
 
 .navigation-dropdown-button:hover::after{
@@ -837,7 +843,7 @@ button {
 
 .services-button, .services-active-button {
   position: relative;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -1254,7 +1260,7 @@ button {
 }
 
 .aside-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
@@ -1270,7 +1276,7 @@ button {
 }
 
 .catalog-filter-title {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -1334,6 +1340,8 @@ button {
 .range-wrapper-inputs {
   display: flex;
   margin-left: -14px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .catalog-filter-label {
@@ -1377,7 +1385,7 @@ button {
 }
 
 .control-label {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1831,7 +1839,7 @@ button {
 
 .footer-info-link {
   display: inline-block;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1873,31 +1881,31 @@ button {
   height: 40px;
 }
 
-  .social-button-img {
-    fill: #FFFFFF;
-    opacity: 0.3;
-  }
+.social-button-img {
+  fill: #FFFFFF;
+  opacity: 0.3;
+}
 
-  .social-button-img path {
-    fill: #444444;
-  }
+.social-button-img path {
+  fill: #444444;
+}
 
-  .social-button:hover .social-button-img {
-    fill: #FFC700;
-    opacity: 1;
-  }
+.social-button:hover .social-button-img {
+  fill: #FFC700;
+  opacity: 1;
+}
 
-  .social-button:active .social-button-img {
-    fill: #FFC700;
-  }
+.social-button:active .social-button-img {
+  fill: #FFC700;
+}
 
-  .social-button:active .social-button-img path {
-    opacity: 0.3;
-  }
+.social-button:active .social-button-img path {
+  opacity: 0.3;
+}
 
-  .footer-telephone {
-    padding-top: 140px;
-  }
+.footer-telephone {
+  padding-top: 140px;
+}
 
 .footer-menu-list {
   display: flex;
@@ -1959,19 +1967,373 @@ button {
   display: block;
 }
 
-/* Улучшение через директиву @supports */
-@supports selector(:focus-visible) {
 
-  /* Убираем фокус у элементов */
-  .focus-visible-outline:focus {
-    outline: none;
-  }
 
-  /* Задаём видимый фокус у элементов */
-  .focus-visible-outline:focus-visible {
-    outline: solid 2px #AF4FFF;
-  }
+.modal-window-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
 }
+
+.modal-window-container-display {
+  display: none;
+}
+
+.modal-window {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 80px;
+  border: 10px solid #000000;
+  background-color: #ffffff;
+}
+
+.modal-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 42px;
+}
+
+.modal-title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.modal-title-button {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: none;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-title-button::after {
+  position: relative;
+  content: url("../images/modal/modal-close.svg");
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+}
+
+.modal-title-button:hover::after {
+  opacity: 0.6;
+}
+
+.modal-title-button:active::after {
+  opacity: 0.3;
+}
+
+.modal-form-name-email {
+display: flex;
+justify-content: space-between;
+margin-bottom: 42px
+}
+
+.modal-fieldset-name {
+  padding: 0;
+  border: none;
+  width: 360px;
+  margin-right: 40px;
+}
+
+.modal-legend-name {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 14px;
+}
+
+.modal-input-name {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  width: 320px;
+  height: 20px;
+  padding: 20px;
+  background: #F0F0F0;
+  border: none;
+}
+
+.modal-input-name-text {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.modal-input-name-text:after {
+  position: relative;
+  content: url("../images/modal/modal-login.svg");
+  top: -40px;
+  left: 233px;
+}
+
+
+.modal-fieldset-email {
+  padding: 0;
+  border: none;
+  width: 360px;
+}
+
+.modal-legend-email {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.modal-input-email {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  width: 320px;
+  height: 20px;
+  padding: 18px 18px;
+  background: #F0F0F0;
+  border: solid 2px #FF3D3D;
+}
+
+.modal-input-email-text::after {
+  position: relative;
+  content: url("../images/modal/modal-mail.svg");
+  top: -40px;
+  left: 176px;
+}
+
+.modal-input-email-text {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  color: #FF3D3D;
+}
+
+.modal-deliver-amount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.modal-fieldset-deliver {
+  padding: 0;
+  border: none;
+  margin-right: 40px;
+}
+
+.modal-legend-deliver {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 14px;
+}
+
+.modal-input-deliver {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  width: 500px;
+  height: 20px;
+  background: #F0F0F0;
+  padding: 20px;
+  border: none;
+}
+
+.modal-fieldset-amount {
+  display: flex;
+  align-items: end;
+  padding: 0;
+  border: 0;
+}
+
+.modal-legend-amount {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+  cursor: pointer;
+}
+
+.modal-legend-amount::after {
+  content: url("../images/modal/modal-amount.svg");
+  width: 26px;
+  height: 26px;
+  padding-left: 8px;
+}
+
+.modal-legend-amount:hover .modal-legend-amount-info,
+.modal-legend-amount:focus .modal-legend-amount-info{
+  display: block;
+}
+
+.modal-legend-amount-info {
+  position: absolute;
+  z-index: 1;
+  padding: 19px 17px 0 19px;
+  background: #000000;
+  top: 36px;
+  left: -15px;
+  display: none;
+}
+
+.modal-legend-amount-info::before {
+  position: absolute;
+  top: -16px;
+  right: 39px;
+  content: url("../images/popover/triangle.svg");
+}
+
+.modal-legend-amount-info-text {
+  display: block;
+  width: 164px;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+
+.modal-legend-button-minus {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  background: #F0F0F0;
+  cursor: pointer;
+}
+
+.modal-legend-button-minus::before {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #000;
+  content: "";
+  top: 29px;
+  left: 22px;
+}
+
+.modal-amount-input-numbers {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background: #F0F0F0;
+  text-align: center;
+  appearance: textfield;
+  padding: 0;
+}
+
+.modal-amount-input-numbers::-webkit-outer-spin-button,
+.modal-amount-input-numbers::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.modal-legend-button-plus {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  background: #F0F0F0;
+  cursor: pointer;
+}
+
+.modal-legend-button-plus::before {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #000;
+  content: "";
+  top: 29px;
+  left: 22px;
+}
+
+.modal-legend-button-plus::after {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #000;
+  content: "";
+  top: 29px;
+  left: 22px;
+  transform: rotate(90deg);
+}
+
+.modal-button-send {
+  position: relative;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 0;
+  background: none;
+  border: none;
+}
+
+/* .modal-button-send::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 8px;
+  background-color: #FFE17F;
+  left: 0px;
+  top: 15px;
+  z-index: -1;
+}
+
+.modal-button-send:hover::before {
+  transform: scale(10);
+  transition: 0.5s;
+}
+
+.modal-button-send:active::before {
+  background: #FFC700;
+  transition: none;
+} */
+
+.modal-button-send:disabled {
+  opacity: 0.3;
+}
+
 
 .popover-container {
   position: absolute;
@@ -2011,7 +2373,7 @@ button {
 .popover-product-monopod-01,
 .popover-product-monopod-02 {
     display: flex;
-  }
+}
 
 .popover-link {
   display: flex;
@@ -2081,7 +2443,7 @@ button {
 
 .popover-quantity {
   width: 120px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -2089,7 +2451,7 @@ button {
 .popover-price {
   width: 150px;
   text-align: end;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -2105,7 +2467,7 @@ button {
   border: solid 2px transparent;
   background: #fff;
   color: #000;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -2125,7 +2487,20 @@ button {
   outline: 2px solid #AF4FFF;
 }
 
-
 .focus-visible-outline:focus {
   outline: solid 2px #AF4FFF;
+}
+
+/* Улучшение через директиву @supports */
+@supports selector(:focus-visible) {
+
+  /* Убираем фокус у элементов */
+  .focus-visible-outline:focus {
+    outline: none;
+  }
+
+  /* Задаём видимый фокус у элементов */
+  .focus-visible-outline:focus-visible {
+    outline: solid 2px #AF4FFF;
+  }
 }

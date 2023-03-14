@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -17,7 +19,7 @@
             <h2 class="visually-hidden">Поиск по сайту.</h2>
             <form class="nav-search-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="search-input-container">
-                <input class="nav-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+                <input class="nav-search-input nav-search-input-catalog" id="search" type="search" name="search" placeholder="Текст поиска">
               </div>
               <div class="search-button-container">
                 <button class="nav-search-button" type="submit"><span class="button-text">Найти</span></button>
@@ -26,7 +28,7 @@
           </section>
           <ul class="clear-list nav-links-list">
             <li class="nav-links-item nav-login">
-              <a class="nav-link nav-login-link focus-visible-outline" href="#">Костя Петухов</a>
+              <a class="nav-link nav-login-link focus-visible-outline" href="#">Коля Петухов</a>
               <span class="exit-link-span">Выйти</span>
             <li class="nav-links-item">
               <a class="nav-link nav-compare-link focus-visible-outline" href="#">Сравнить</a>
@@ -35,6 +37,37 @@
                 <img class="number-two-icon" src="/images/icons/basket-and-number.svg" alt="Иконка количества товаров в корзине.">
                 Корзина
               </button>
+              <div>
+                <div class="popover-container popover-display">
+                  <ul class="clear-list popover-product-list">
+                    <li class="popover-product-item">
+                      <div class="popover-product-monopod-01">
+                        <a class="popover-link" href="#">
+                          <img class="popover-product-img" src="/images/popover/monopod-icon.jpg" width="39" height="43" alt="Иконка любительской селфи-палки.">
+                          Любительская <br>селфи-палка
+                        </a>
+                        <button class="close-product-button"></button>
+                      </div>
+                    </li>
+                    <li class="popover-product-item">
+                      <div class="popover-product-monopod-02">
+                        <a class="popover-link" href="#">
+                          <img class="popover-product-img" src="/images/popover/monopod-icon-02.jpg" width="39" height="43" alt="Иконка профессиональньной селфи-палки.">
+                          Профессиональная <br>селфи-палка</a>
+                        </a>
+                        <button class="close-product-button"></button>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="popover-basket-info">
+                    <p class="popover-quantity"><span class="popover-quantity">Товаров: 2</span></p>
+                    <p class="popover-price"><span class="popover-price"></span>Сумма: 2000 ₽</p>
+                  </div>
+                  <div class="popover-open-basket-button-container">
+                    <button class="popover-open-basket-button" type="button">Открыть корзину</button>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -91,7 +124,7 @@
     <main class="main-catalog">
       <div class="main-catalog-container page-container">
         <aside class="catalog-aside">
-          <form class="aside-filter-panel" action="https://echo.htmlacademy.ru/" method="get"></form>
+          <form class="aside-filter-panel" action="https://echo.htmlacademy.ru/" method="get">
             <h2 class="aside-title">фильтр:</h2>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость</legend>
