@@ -107,11 +107,11 @@
                   </div>
                 </div>
                 <div class="range-wrapper-inputs">
-                  <label class="catalog-filter-label">
+                  <label class="catalog-filter-label" style="width: 30px;">
                     от <input class="range-input" type="number" value="0" name="min-price">
                   </label>
-                  <label class="catalog-filter-label">
-                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 45px;">
+                  <label class="catalog-filter-label" style="width: 70px;">
+                    до <input class="range-input" type="number" value="5000" name="max-price">
                   </label>
                 </div>
               </div>
@@ -159,14 +159,14 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Bluetooth</legend>
               <ul class="clear-list catalog-filter-list">
-                <li class="catalog-filter-item">
+                <li class="catalog-filter-item bluetooth-filter-item">
                   <label class="bluetooth-control">
                     <input class="visually-hidden control-input" type="radio" name="bluetooth-option" value="yes" checked>
                     <span class="bluetooth-control-mark"></span>
                     <span class="control-label">Есть</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="catalog-filter-item bluetooth-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="bluetooth-option" value="no">
                     <span class="bluetooth-control-mark"></span>
@@ -214,63 +214,67 @@
               <h2 class="visually-hidden">Товары</h2>
               <ul class="clear-list product-list">
                 <li class="product-item">
-                  <a class="product-link" href="#">
+                  <div class="product-item-container">
                     <img class="product-img" src="images/catalog/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
                     <div class="product-text">
                       <h3 class="product-title">Любительская<br> селфи-палка</h3>
                       <span class="product-price">500 ₽</span>
                     </div>
-                  </a>
+                    <button class="product-item-button crossing" type="button">Подробнее</button>
+                  </div>
                 </li>
                 <li class="product-item">
-                  <a class="product-link" href="#">
+                  <div class="product-item-container">
                     <img class="product-img" src="images/catalog/professional-selfie-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                     <div class="product-text">
                       <h3 class="product-title">Профессиональная<br> селфи-палка</h3>
                       <span class="product-price">1 500 ₽</span>
                     </div>
-                  </a>
+                    <button class="product-item-button crossing" type="button">Подробнее</button>
+                  </div>
                 </li>
                 <li class="product-item">
-                  <a class="product-link" href="#">
+                  <div class="product-item-container">
                     <img class="product-img" src="images/catalog/unsinkable-selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                     <div class="product-text">
                       <h3 class="product-title">Непотопляемая<br> селфи-палка</h3>
                       <span class="product-price">2 500 ₽</span>
                     </div>
-                  </a>
+                    <button class="product-item-button crossing" type="button">Подробнее</button>
+                  </div>
                 </li>
                 <li class="product-item">
-                  <a class="product-link" href="#">
+                  <div class="product-item-container">
                     <img class="product-img" src="images/catalog/follow-me-selfie-stick.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                     <div class="product-text">
                       <h3 class="product-title">Селфи-палка «Следуй<br> за мной»</h3>
                       <span class="product-price">1 500 ₽</span>
                     </div>
-                  </a>
+                    <button class="product-item-button crossing" type="button">Подробнее</button>
+                  </div>
                 </li>
               </ul>
-              <button class="load-more-btn load-more-crossing" type="button">Загрузить ещё</button>
+              <button class="load-more-btn load-more-crossing focus-visible-outline" type="button">Загрузить ещё</button>
               <div class="pagination-list-wrapper">
-                <a class="pagination-prev pagination-btn pagination-disabled" href="#">Назад</a>
+                <a class="pagination-prev pagination-btn pagination-disabled focus-visible-outline" href="#">Назад</a>
                   <ul class="clear-list pagination-list-pages">
                     <li class="pagination-item">
-                      <a class="pagination-link pagination-current">1</a>
+                      <a class="pagination-link pagination-current focus-visible-outline" href="#">1</a>
                     </li>
                     <li class="pagination-item">
-                      <a class="pagination-link" href="#">2</a>
+                      <a class="pagination-link focus-visible-outline" href="#">2</a>
                     </li>
                     <li class="pagination-item">
-                      <a class="pagination-link" href="#">3</a>
+                      <a class="pagination-link focus-visible-outline" href="#">3</a>
                     </li>
                     <li class="pagination-item">
-                      <a class="pagination-link">...</a>
+                      <a class="pagination-link focus-visible-outline" href="#">...</a>
                     </li>
                     <li class="pagination-item">
-                      <a class="pagination-link" href="#">15</a>
+                      <a class="pagination-link focus-visible-outline" href="#">15</a>
                     </li>
                   </ul>
-                <a class="pagination-btn pagination-next" href="#">Вперед</a>
+                <a class="pagination-btn pagination-next focus-visible-outline" href="#">Вперед</a>
               </div>
             </div>
           </div>
