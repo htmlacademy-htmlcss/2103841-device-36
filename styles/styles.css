@@ -2519,3 +2519,7 @@ button {
     outline: solid 2px #AF4FFF;
   }
 }
+
+.display-none {
+  display: none;
+}
