@@ -601,6 +601,7 @@ button {
 }
 
 .slide-btn {
+  box-sizing: border-box;
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 10px 35px;
@@ -959,6 +960,7 @@ button {
 }
 
 .delivery-button {
+  display: block;
   background-color: #F0F0F0;
   position: relative;
   width: 1160px;
@@ -1653,12 +1655,15 @@ button {
 }
 
 .product-item-button {
+  display: block;
   position: relative;
+  text-decoration: none;
   width: 220px;
   height: 40px;
   grid-area: 1 / 1 / 2 / 2;
-  top: 170px;
+  top: 180px;
   font-family: "Raleway", Arial, sans-serif;
+  color: #000000;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -1676,6 +1681,45 @@ button {
 .product-item:hover .product-item-button {
   opacity: 1;
 }
+
+.catalog-crossing {
+  position: relative;
+  z-index: 0;
+}
+
+.catalog-crossing::before {
+  position: absolute;
+  content: "";
+  background-color: #ffe17f;
+  transform: translateY(-50%);
+  top: 26%;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+}
+
+.catalog-crossing:hover {
+  background-color: #FFE17F;
+  transition: 0.2s ease;
+}
+
+.catalog-crossing:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: -1px;
+}
+
+.catalog-crossing:active:not(:disabled),
+.catalog-crossing:active:not(:disabled)::before {
+  background-color:#ffcc33;
+  transition: 0.2s ease;
+}
+
+.catalog-crossing:disabled {
+  opacity: 0.3;
+  cursor: auto;
+}
+
 
 .product-item:hover .product-img,
 .product-item:hover .product-title {
@@ -1736,7 +1780,7 @@ button {
 }
 
 .pagination-btn:active {
-  color: #9a9a9a ;
+  color: #9a9a9a;
   transition: 0.5s ease;
 }
 
@@ -2210,6 +2254,7 @@ button {
   line-height: 20px;
   position: relative;
   display: flex;
+  align-items: center;
   margin-bottom: 8px;
   cursor: pointer;
 }
