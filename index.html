@@ -27,11 +27,13 @@
             <ul class="clear-list nav-links-list">
               <li class="nav-links-item nav-login">
                 <a class="nav-link nav-login-link focus-visible-outline" href="#">Войти</a>
+              </li>
               <li class="nav-links-item">
                 <a class="nav-link nav-compare-link focus-visible-outline" href="#">Сравнить</a>
+              </li>
               <li class="nav-button-item">
+                <span class="basket-amount">2</span>
                 <button class="nav-link nav-basket-button nav-link-button focus-visible-outline">
-                  <img class="number-two-icon" src="/images/icons/basket-and-number.svg" alt="Иконка количества товаров в корзине.">
                   Корзина
                 </button>
                 <div>
@@ -40,7 +42,7 @@
                       <li class="popover-product-item">
                         <div class="popover-product-monopod-01">
                           <a class="popover-link" href="#">
-                            <img class="popover-product-img" src="/images/popover/monopod-icon.jpg" width="39" height="43" alt="Иконка любительской селфи-палки.">
+                            <img class="popover-product-img" src="images/popover/monopod-icon.jpg" width="39" height="43" alt="Иконка любительской селфи-палки.">
                             Любительская <br>селфи-палка
                           </a>
                           <button class="close-product-button"></button>
@@ -49,7 +51,7 @@
                       <li class="popover-product-item">
                         <div class="popover-product-monopod-02">
                           <a class="popover-link" href="#">
-                            <img class="popover-product-img" src="/images/popover/monopod-icon-02.jpg" width="39" height="43" alt="Иконка профессиональньной селфи-палки.">
+                            <img class="popover-product-img" src="images/popover/monopod-icon-02.jpg" width="39" height="43" alt="Иконка профессиональньной селфи-палки.">
                             Профессиональная <br>селфи-палка
                           </a>
                           <button class="close-product-button"></button>
@@ -76,16 +78,26 @@
               <div class="navigation-dropdown-list-container">
                 <ul class="clear-list navigation-dropdown-list">
                   <li class="navigation-dropdown-item">
-                    <a class="navigation-dropdown-link focus-visible-outline" href="#">Виртуальная реальность</a><br>
-                    <a class="navigation-dropdown-link focus-visible-outline" href="/catalog.html">Моноподы для селфи</a><br>
-                    <a class="navigation-dropdown-link focus-visible-outline" href="#">Экшн-камеры</a><br>
+                    <a class="navigation-dropdown-link  focus-visible-outline" href="#">Виртуальная реальность</a>
                   </li>
                   <li class="navigation-dropdown-item">
-                    <a class="navigation-dropdown-link focus-visible-outline" href="#">Фитнес-браслеты</a><br>
-                    <a class="navigation-dropdown-link focus-visible-outline" href="#">Умные часы</a>
+                    <a class="navigation-dropdown-link  focus-visible-outline" href="catalog.html">Моноподы для селфи</a>
                   </li>
-                  <li class="navigation-dropdown-item focus-visible-outline">
-                    <a class="navigation-dropdown-link" href="#">Квадракоптеры</a>
+                  <li class="navigation-dropdown-item">
+                    <a class="navigation-dropdown-link  focus-visible-outline" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="clear-list navigation-dropdown-list">
+                  <li class="navigation-dropdown-item">
+                    <a class="navigation-dropdown-link  focus-visible-outline" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="navigation-dropdown-item">
+                    <a class="navigation-dropdown-link  focus-visible-outline" href="#">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="clear-list navigation-dropdown-list">
+                  <li class="navigation-dropdown-item">
+                    <a class="navigation-dropdown-link focus-visible-outline" href="#">Квадракоптеры</a>
                   </li>
                 </ul>
               </div>
@@ -300,12 +312,12 @@
                   <button class="crossing services-button focus-visible-outline" type="button">Гарантия</button>
                 </li>
                 <li class="services-button-item">
-                  <button class="crossing services-button focus-visible-outline" type="button">Гарантия</button>
+                  <button class="crossing services-button focus-visible-outline" type="button">Кредит</button>
                 </li>
               </ol>
               <div class="services-slider-text-container service-slider-text-container-delivery">
                   <h3 class="services-slider-title">Доставка</h3>
-                  <p class="services-slider-text">Мы с удовольствием доставим ваш товар <br>прямо к вашему подъезду совершенно бесплатно!
+                  <p class="services-slider-text">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно!
                       Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.
                   </p>
               </div>
@@ -320,7 +332,7 @@
                   <button class="services-active-button" type="button" disabled>Гарантия</button>
                 </li>
                 <li class="services-button-item">
-                  <button class="crossing services-button focus-visible-outline" type="button">Гарантия</button>
+                  <button class="crossing services-button focus-visible-outline" type="button">Кредит</button>
                 </li>
               </ol>
               <div class="services-slider-text-container service-slider-text-container-warranty">
@@ -340,7 +352,7 @@
                   <button class="crossing services-button focus-visible-outline" type="button">Гарантия</button>
                 </li>
                 <li class="services-button-item services-active-button-item">
-                  <button class="services-active-button" type="button" disabled>Гарантия</button>
+                  <button class="services-active-button" type="button" disabled>Кредит</button>
                 </li>
               </ol>
               <div class="services-slider-text-container service-slider-text-container-credit">
@@ -364,15 +376,15 @@
       <section class="page-container main-info">
         <div class="about-us-wrapper">
           <h2 class="main-info-title">О нас</h2>
-          <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+          <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным <br>гика, который есть в каждом из нас</p>
           <p class="about-us-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
 
-          <ul class="company-list">
+          <ul class="clear-list company-list">
             <li class="company-item">Меловые линии</li>
             <li class="company-item">СДИК</li>
             <li class="company-item">ТоксБерри</li>
           </ul>
-          <button class="main-info-link btn crossing focus-visible-outline">Подробнее о нас</button>
+          <button class="about-us-btn btn crossing focus-visible-outline">Подробнее о нас</button>
         </div>
         <div class="contacts-wrapper">
           <h2 class="main-info-title">Контакты</h2>
@@ -387,15 +399,17 @@
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
-          <button class="main-info-link btn crossing focus-visible-outline">Напишите нам</button>
+          <button class="contacts-btn btn crossing focus-visible-outline">Напишите нам</button>
         </div>
       </section>
       <section class="subscribe">
         <div class="subscribe-container page-container">
           <div class="subscribe-wrapper">
             <h2 class="subscribe-title">Подпишитесь<br> на рассылку</h2>
-            <p class="subscribe-text">Еженедельный дайджест с обзорами новинок, <br>длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-            </p>
+            <div class="subscribe-text-container">
+              <p class="subscribe-text">Еженедельный дайджест с обзорами новинок, <br>длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+              </p>
+            </div>
           </div>
           <div class="subscribe-form-wrapper">
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -519,12 +533,11 @@
                 <input class="modal-input-deliver" type="text" placeholder="В свободной форме" name="bring-text">
               </fieldset>
               <fieldset class="modal-fieldset-amount">
-                <legend tabindex="0" class="modal-legend-amount">Количество:
-                  <div class="modal-legend-amount-info">
-                    <p class="modal-legend-amount-info-text">Постараемся найти, сколько нужно. Привезём сколько получится по
-                      требованиям <br>к провозу багажа.</p>
-                  </div>
-                </legend>
+                <legend tabindex="0" class="modal-legend-amount">Количество:</legend>
+                <div class="modal-legend-amount-info">
+                  <p class="modal-legend-amount-info-text">Постараемся найти, сколько нужно. Привезём сколько получится по
+                    требованиям <br>к провозу багажа.</p>
+                </div>
                 <button class="modal-legend-button-minus" type="button"></button>
                 <input class="modal-amount-input-numbers" type="number" value="1" name="quantity">
                 <button class="modal-legend-button-plus" type="button"></button>
