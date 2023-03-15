@@ -230,33 +230,33 @@
 
         <div class="product-cards">
           <div class="cards-sorting">
-              <h2 class="cards-filter-title filter-title">сортировка:</h2>
-              <form class="cards-sorting-form" action="https://echo.htmlacademy.ru/" method="post">
-                <select class="cards-sorting-select focus-visible-outline" aria-label="Сортировка:">
-                  <option class="cards-sorting-popular" value="popular">Популярные</option>
-                </select>
-              </form>
-              <div class="sorting-buttons-container">
-                <button class="sort-buttons sort-up focus-visible-outline" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
-                    <g clip-path="url(#a)">
-                      <path d="m6 0 5.5 10H.5" />
-                    </g>
-                    <defs>
-                      <clipPath id="a">
-                        <path d="M.5 0h11v10H.5z" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="visually-hidden">От меньшего к большему</span>
-                </button>
-                <button class="sort-buttons sort-down focus-visible-outline" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
-                    <path d="M6 10 .5 0h11" />
-                  </svg>
-                  <span class="visually-hidden">От большего к меньшему</span>
-                </button>
-              </div>
+            <h2 class="cards-filter-title filter-title">сортировка:</h2>
+            <form class="cards-sorting-form" action="https://echo.htmlacademy.ru/" method="post">
+              <select class="cards-sorting-select focus-visible-outline" aria-label="Сортировка:">
+                <option class="cards-sorting-popular" value="popular">Популярные</option>
+              </select>
+            </form>
+            <div class="sorting-buttons-container">
+              <button class="sort-buttons sort-up focus-visible-outline" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
+                  <g clip-path="url(#a)">
+                    <path d="m6 0 5.5 10H.5" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path d="M.5 0h11v10H.5z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="visually-hidden">От меньшего к большему</span>
+              </button>
+              <button class="sort-buttons sort-down focus-visible-outline" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
+                  <path d="M6 10 .5 0h11" />
+                </svg>
+                <span class="visually-hidden">От большего к меньшему</span>
+              </button>
+            </div>
           </div>
           <div class="product-main">
             <div class="product-container">
@@ -269,7 +269,7 @@
                       <h3 class="product-title">Любительская<br> селфи-палка</h3>
                       <span class="product-price">500 ₽</span>
                     </div>
-                    <button class="product-item-button crossing" type="button">Подробнее</button>
+                    <a class="product-item-button catalog-crossing" href="#">Подробнее</a>
                   </div>
                 </li>
                 <li class="product-item">
@@ -279,7 +279,7 @@
                       <h3 class="product-title">Профессиональная<br> селфи-палка</h3>
                       <span class="product-price">1 500 ₽</span>
                     </div>
-                    <button class="product-item-button crossing" type="button">Подробнее</button>
+                    <a class="product-item-button catalog-crossing" href="#">Подробнее</a>
                   </div>
                 </li>
                 <li class="product-item">
@@ -289,7 +289,7 @@
                       <h3 class="product-title">Непотопляемая<br> селфи-палка</h3>
                       <span class="product-price">2 500 ₽</span>
                     </div>
-                    <button class="product-item-button crossing" type="button">Подробнее</button>
+                    <a class="product-item-button catalog-crossing" href="#">Подробнее</a>
                   </div>
                 </li>
                 <li class="product-item">
@@ -299,13 +299,15 @@
                       <h3 class="product-title">Селфи-палка «Следуй<br> за мной»</h3>
                       <span class="product-price">1 500 ₽</span>
                     </div>
-                    <button class="product-item-button crossing" type="button">Подробнее</button>
+                    <a class="product-item-button catalog-crossing" href="#">Подробнее</a>
                   </div>
                 </li>
               </ul>
               <button class="load-more-btn load-more-crossing focus-visible-outline" type="button">Загрузить ещё</button>
               <div class="pagination-list-wrapper">
-                <a class="pagination-prev pagination-btn pagination-disabled focus-visible-outline" href="#">Назад</a>
+                <a class="pagination-btn pagination-prev pagination-disabled focus-visible-outline" href="#">
+                  Назад
+                </a>
                   <ul class="clear-list pagination-list-pages">
                     <li class="pagination-item">
                       <a class="pagination-link pagination-current focus-visible-outline" href="#">1</a>
@@ -323,7 +325,9 @@
                       <a class="pagination-link focus-visible-outline" href="#">15</a>
                     </li>
                   </ul>
-                <a class="pagination-btn pagination-next focus-visible-outline" href="#">Вперед</a>
+                <a class="pagination-btn pagination-next focus-visible-outline" href="#">
+                  Вперед
+                </a>
               </div>
             </div>
           </div>
@@ -339,7 +343,8 @@
           <h2 class="visually-hidden">Адрес</h2>
           <address class="footer-address">
             <p class="footer-address-text">Санкт-Петербург, набережная <br>
-              реки Карповки, 5, литера П.</p>
+              реки Карповки, 5, литера П.
+            </p>
           </address>
         </div>
         <div class="footer-social">
