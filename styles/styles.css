@@ -397,7 +397,7 @@ button {
   z-index: 2;
 }
 
-.navigation-dropdown-button::after{
+.navigation-dropdown-button::after {
   content: url("../images/icons/plus-dropdown.svg");
   padding-left: 17px;
   padding-bottom: 5px;
@@ -406,7 +406,7 @@ button {
   height: 50px;
 }
 
-.navigation-dropdown-button:hover::after{
+.navigation-dropdown-button:hover::after {
   opacity: 1;
 }
 
@@ -845,7 +845,7 @@ button {
 .services-item {
   display: flex;
   width: 1160px;
-  height: 319px;;
+  height: 319px;
 }
 
 .services-button-list {
@@ -1077,7 +1077,7 @@ button {
   top: 5px;
 }
 
-.contacts-wrapper{
+.contacts-wrapper {
   width: 532px;
   margin-left: 108px;
 }
@@ -1446,7 +1446,7 @@ button {
   border-radius: 3px;
 }
 
-.control:hover  {
+.control:hover {
   opacity: 0.6;
 }
 
@@ -1892,18 +1892,6 @@ button {
   border-bottom: solid 2px transparent;
 }
 
-/* .info-link-delivery {
-  width: 125px;
-}
-
-.info-link-warranty {
-  width: 121px;
-}
-
-.info-link-contacts {
-  width: 128px;
-} */
-
 .footer-info-link:hover {
   color: #FFC700;
   padding-bottom: 4px;
@@ -2083,9 +2071,9 @@ button {
 }
 
 .modal-form-name-email {
-display: flex;
-justify-content: space-between;
-margin-bottom: 42px
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px
 }
 
 .modal-fieldset-name {
@@ -2399,7 +2387,7 @@ margin-bottom: 42px
 
 .popover-product-monopod-01,
 .popover-product-monopod-02 {
-    display: flex;
+  display: flex;
 }
 
 .popover-link {
