@@ -104,7 +104,7 @@ body {
 .index-header-logo-link {
   display: block;
   margin-top: -20px;
-  margin-bottom: 26px;
+  margin-bottom: 17px;
 }
 
 .catalog-header-logo-link {
@@ -512,7 +512,7 @@ body {
   flex-direction: row;
   width: 1160px;
   margin: 0 auto;
-  margin-top: -145px;
+  margin-top: -147px;
   margin-bottom: 70px;
 }
 
@@ -826,7 +826,7 @@ body {
   position: relative;
   background: #F0F0F0;
   margin-bottom: 70px;
-  padding-bottom: 72px;
+  padding-bottom: 103px;
   margin-top: 172px;
   z-index: 0;
 }
@@ -845,16 +845,14 @@ body {
 .services-item {
   display: flex;
   width: 1160px;
-  height: 319px;
 }
 
 .services-button-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-right: 117px;
   border-right: solid 6px;
-  padding-top: 30px;
+  padding-top: 65px;
 }
 
 .services-button-item:last-child .advantage-button {
@@ -901,10 +899,7 @@ body {
 }
 
 .services-slider-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
+  position: relative;
 }
 
 .services-slider-text {
@@ -916,30 +911,20 @@ body {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
+  word-wrap: break-word;
   margin: 0;
   padding: 0;
-  margin-bottom: 34px;
-}
-
-.service-slider-text-container-delivery {
-  flex-wrap: wrap;
- /*  margin-right: 106px; */
-}
-
-.service-slider-text-container-warranty {
-  margin-right: 83px;
-}
-
-.service-slider-text-container-credit {
-  margin-right: 98px;
+  padding-top: 75px;
+  margin-bottom: 35px;
 }
 
 .service-slider-text-container-delivery:after {
   position: absolute;
   content: url("../images/icons/delivery-guy.svg");
-  /* padding-left: 106px; */
   width: 136px;
   height: 164px;
+  top: 80px;
+  right: -242px;
 }
 
 .warranty-img-container {
@@ -1432,10 +1417,11 @@ body {
   position: relative;
   display: block;
   padding-left: 34px;
-  height: 20px;
+  /* height: 20px; */
 }
 
 .control-label {
+  word-break: break-word;
   display: block;
   font-family: "Rubik", Arial, sans-serif;
   font-style: normal;
