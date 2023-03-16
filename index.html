@@ -10,7 +10,9 @@
   <body>
     <header class="index-head-container page-header">
       <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-      <img class="header-logo focus-visible-outline" src="images/icons/logo.svg" width="145" height="36" alt="DEVICE" tabindex="0">
+      <a class="index-header-logo-link focus-visible-outline" href="index.html">
+        <img src="images/icons/logo.svg" width="145" height="36" alt="DEVICE">
+      </a>
       <nav class="navigation">
         <div class="search-and-user-container">
           <section class="navigation-search">
@@ -45,7 +47,9 @@
                           <img class="popover-product-img" src="images/popover/monopod-icon.jpg" width="39" height="43" alt="Иконка любительской селфи-палки.">
                           Любительская <br>селфи-палка
                         </a>
-                        <button class="close-product-button" type="button"></button>
+                        <button class="close-product-button" type="button">
+                          <span class="visually-hidden">убрать товар из корзины</span>
+                        </button>
                       </div>
                     </li>
                     <li class="popover-product-item">
@@ -54,7 +58,9 @@
                           <img class="popover-product-img" src="images/popover/monopod-icon-02.jpg" width="39" height="43" alt="Иконка профессиональньной селфи-палки.">
                           Профессиональная <br>селфи-палка
                         </a>
-                        <button class="close-product-button" type="button"></button>
+                        <button class="close-product-button" type="button">
+                          <span class="visually-hidden">убрать товар из корзины</span>
+                        </button>
                       </div>
                     </li>
                   </ul>
@@ -73,8 +79,7 @@
         <div class="dropdown-and-advantages-container">
           <section class="navigation-dropdown">
             <h2 class="visually-hidden">Выпадающее меню каталога товаров.</h2>
-            <input class="navigation-dropdown-input" type="checkbox" id="navigation-dropdown-input">
-            <label class="navigation-dropdown-button focus-visible-outline" tabindex="0" for="navigation-dropdown-input">Каталог товаров</label>
+            <button class="navigation-dropdown-button focus-visible-outline" type="button">Каталог товаров</button>
             <div class="navigation-dropdown-list-container">
               <ul class="clear-list navigation-dropdown-list">
                 <li class="navigation-dropdown-item">
@@ -510,37 +515,51 @@
       <div class="modal-window">
         <div class="modal-title-container">
           <h2 class="modal-title">Доставка под заказ</h2>
-          <button class="modal-title-button focus-visible-outline" type="button"></button>
+          <button class="modal-title-button focus-visible-outline" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
         </div>
         <div class="modal-form-container">
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="modal-form-name-email">
               <fieldset class="modal-fieldset-name">
-                <legend class="modal-legend-name">Ваше имя:</legend>
+                <label class="visually-hidden">Ваше имя:
+                  <legend class="modal-legend-name">Ваше имя:</legend>
+                </label>
                 <input class="modal-input-name" type="text" placeholder="Введите имя" name="name">
                 <p class="modal-input-name-text">Добавьте имя</p>
               </fieldset>
               <fieldset class="modal-fieldset-email">
-                <legend class="modal-legend-email">Ваш e-mail:</legend>
-                <input class="modal-input-email" type="email" value="почта" name="e-mail">
+                <label class="visually-hidden">Ваш e-mail:
+                  <legend class="modal-legend-email">Ваш e-mail:</legend>
+                </label>
+                <input class="modal-input-email" type="email" name="e-mail" placeholder="почта">
                 <p class="modal-input-email-text">Забавный у вас адрес</p>
               </fieldset>
             </div>
             <div class="modal-deliver-amount">
               <fieldset class="modal-fieldset-deliver">
-                <legend class="modal-legend-deliver">Что нужно привезти:</legend>
+                <label class="visually-hidden">Что нужно привезти:
+                  <legend class="modal-legend-deliver">Что нужно привезти:</legend>
+                </label>
                 <input class="modal-input-deliver" type="text" placeholder="В свободной форме" name="bring-text">
               </fieldset>
               <fieldset class="modal-fieldset-amount">
-                <legend tabindex="0" class="modal-legend-amount">Количество:</legend>
+                <label class="visually-hidden">Количество:
+                  <legend tabindex="0" class="modal-legend-amount">Количество:</legend>
+                </label>
                 <div class="modal-legend-amount-info">
                   <p class="modal-legend-amount-info-text">Постараемся найти, сколько нужно. Привезём сколько получится по
                     требованиям <br>к провозу багажа.
                   </p>
                 </div>
-                <button class="modal-legend-button-minus" type="button"></button>
+                <button class="modal-legend-button-minus" type="button">
+                  <span class="visually-hidden">минус</span>
+                </button>
                 <input class="modal-amount-input-numbers" type="number" value="1" name="quantity">
-                <button class="modal-legend-button-plus" type="button"></button>
+                <button class="modal-legend-button-plus" type="button">
+                  <span class="visually-hidden">плюс</span>
+                </button>
               </fieldset>
             </div>
             <button class="modal-button-send crossing" type="submit">Отправить</button>
