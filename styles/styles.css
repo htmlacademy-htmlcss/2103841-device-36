@@ -507,6 +507,7 @@ body {
 /*main styles*/
 
 .promo-slider {
+  position: relative;
   display: flex;
   flex-direction: row;
   width: 1160px;
@@ -922,7 +923,7 @@ body {
 
 .service-slider-text-container-delivery {
   flex-wrap: wrap;
-  margin-right: 106px;
+ /*  margin-right: 106px; */
 }
 
 .service-slider-text-container-warranty {
@@ -933,12 +934,12 @@ body {
   margin-right: 98px;
 }
 
-.delivery-guy-img-container {
-  display: flex;
-  align-self: center;
+.service-slider-text-container-delivery:after {
+  position: absolute;
+  content: url("../images/icons/delivery-guy.svg");
+  /* padding-left: 106px; */
   width: 136px;
   height: 164px;
-  background-image: url("../images/icons/delivery-guy.svg");
 }
 
 .warranty-img-container {
@@ -1140,7 +1141,7 @@ body {
 
 .subscribe-container {
   padding-top: 67px;
-  padding-bottom: 56px;
+  padding-bottom: 60px;
 }
 
 .subscribe-wrapper {
