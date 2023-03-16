@@ -836,7 +836,7 @@ body {
   justify-content: start;
 }
 
-.services-list {
+.services {
   display: flex;
   justify-content: start;
   margin-top: -104px;
@@ -927,20 +927,22 @@ body {
   right: -242px;
 }
 
-.warranty-img-container {
-  display: flex;
-  align-self: center;
-  width: 171px;
-  height: 195px;
-  background-image: url("../images/icons/warranty.svg");
+.service-slider-text-container-warranty::after {
+  position: absolute;
+  content: url("../images/icons/warranty.svg");
+  width: 136px;
+  height: 164px;
+  top: 80px;
+  right: -242px;
 }
 
-.credit-card-img-container {
-  display: flex;
-  align-self: center;
-  width: 156px;
-  height: 188px;
-  background-image: url("../images/icons/credit.svg");
+.service-slider-text-container-credit::after {
+  position: absolute;
+  content: url("../images/icons/credit.svg");
+  width: 136px;
+  height: 164px;
+  top: 80px;
+  right: -242px;
 }
 
 .delivery {
@@ -2160,6 +2162,7 @@ body {
 }
 
 .modal-legend-email {
+  display: block;
   font-family: "Rubik", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -2227,6 +2230,8 @@ body {
 }
 
 .modal-fieldset-deliver {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   border: none;
   margin-right: 40px;
@@ -2255,7 +2260,7 @@ body {
 .modal-fieldset-amount {
   position: relative;
   display: flex;
-  align-items: end;
+  flex-direction: column;
   padding: 0;
   border: 0;
 }
@@ -2290,7 +2295,7 @@ body {
   z-index: 1;
   padding: 19px 17px 0 19px;
   background: #000000;
-  top: 0;
+  top: 40px;
   left: -16px;
   display: none;
 }
@@ -2312,6 +2317,10 @@ body {
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 19px;
+}
+
+.amount-buttons{
+  display: flex;
 }
 
 .modal-legend-button-minus {

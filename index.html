@@ -257,7 +257,7 @@
 
       <section class="services-slider">
         <div class="page-container services-slider-container">
-          <div class="clear-list services-list">
+          <div class="clear-list services">
             <div class="services-item">
               <ol class= "clear-list services-button-list">
                 <li class="services-button-item services-active-button-item">
@@ -271,29 +271,27 @@
                 </li>
               </ol>
               <div class="services-slider-text-container service-slider-text-container-delivery">
-                  <h3 class="services-slider-title">Доставка</h3>
-                  <p class="services-slider-text">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно!
-                      Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.
-                  </p>
+                <h3 class="services-slider-title">Доставка</h3>
+                <p class="services-slider-text">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно!
+                    Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.
+                </p>
               </div>
-            <div>
+            </div>
             <div class="services-item display-none">
               <div class="services-slider-text-container service-slider-text-container-warranty">
-                  <h3 class="services-slider-title">Гарантия</h3>
-                  <p class="services-slider-text">Если из-за возгарания купленного у нас товара у вас <br>сгорит дом - не
-                    переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.
-                  </p>
+                <h3 class="services-slider-title">Гарантия</h3>
+                <p class="services-slider-text">Если из-за возгарания купленного у нас товара у вас <br>сгорит дом - не
+                  переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.
+                </p>
               </div>
-              <div class="warranty-img-container"></div>
             </div>
             <div class="services-item display-none">
               <div class="services-slider-text-container service-slider-text-container-credit">
-                  <h3 class="services-slider-title">Кредит</h3>
-                  <p class="services-slider-text">Залезть в долговую яму стало проще! Кредитные <br>консультанта подберут для
-                    вас наиболее выгодняе <br>условия кредита. Выгодные для банка, разумеется.
-                  </p>
+                <h3 class="services-slider-title">Кредит</h3>
+                <p class="services-slider-text">Залезть в долговую яму стало проще! Кредитные <br>консультанта подберут для
+                  вас наиболее выгодняе <br>условия кредита. Выгодные для банка, разумеется.
+                </p>
               </div>
-              <div class="credit-card-img-container"></div>
             </div>
           </div>
         </div>
@@ -450,43 +448,37 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="modal-form-name-email">
               <fieldset class="modal-fieldset-name">
-                <label class="visually-hidden">Ваше имя:
-                  <legend class="modal-legend-name">Ваше имя:</legend>
-                </label>
-                <input class="modal-input-name" type="text" placeholder="Введите имя" name="name">
+                <label class="modal-legend-email" for="name">Ваше имя:</label>
+                <input class="modal-input-name" id="name" type="text" placeholder="Введите имя" name="name">
                 <p class="modal-input-name-text">Добавьте имя</p>
               </fieldset>
               <fieldset class="modal-fieldset-email">
-                <label class="visually-hidden">Ваш e-mail:
-                  <legend class="modal-legend-email">Ваш e-mail:</legend>
-                </label>
-                <input class="modal-input-email" type="email" name="e-mail" placeholder="почта">
+                <label class="modal-legend-email" for="email">Ваш e-mail:</label>
+                <input class="modal-input-email" id="email" type="email" name="e-mail" placeholder="почта">
                 <p class="modal-input-email-text">Забавный у вас адрес</p>
               </fieldset>
             </div>
             <div class="modal-deliver-amount">
               <fieldset class="modal-fieldset-deliver">
-                <label class="visually-hidden">Что нужно привезти:
-                  <legend class="modal-legend-deliver">Что нужно привезти:</legend>
-                </label>
-                <input class="modal-input-deliver" type="text" placeholder="В свободной форме" name="bring-text">
+                <label class="modal-legend-deliver" for="что-привезти">Что нужно привезти:</label>
+                <input class="modal-input-deliver" type="text" id="что-привезти" placeholder="В свободной форме" name="bring-text">
               </fieldset>
               <fieldset class="modal-fieldset-amount">
-                <label class="visually-hidden">Количество:
-                  <legend tabindex="0" class="modal-legend-amount">Количество:</legend>
-                </label>
+                <span tabindex="0" class="modal-legend-amount">Количество:</span>
                 <div class="modal-legend-amount-info">
                   <p class="modal-legend-amount-info-text">Постараемся найти, сколько нужно. Привезём сколько получится по
                     требованиям <br>к провозу багажа.
                   </p>
                 </div>
-                <button class="modal-legend-button-minus" type="button">
-                  <span class="visually-hidden">минус</span>
-                </button>
-                <input class="modal-amount-input-numbers" type="number" value="1" name="quantity">
-                <button class="modal-legend-button-plus" type="button">
-                  <span class="visually-hidden">плюс</span>
-                </button>
+                <div class="amount-buttons">
+                  <button class="modal-legend-button-minus" type="button">
+                    <span class="visually-hidden">минус</span>
+                  </button>
+                  <input class="modal-amount-input-numbers" type="number" value="1" name="quantity">
+                  <button class="modal-legend-button-plus" type="button">
+                    <span class="visually-hidden">плюс</span>
+                  </button>
+                </div>
               </fieldset>
             </div>
             <button class="modal-button-send crossing" type="submit">Отправить</button>
