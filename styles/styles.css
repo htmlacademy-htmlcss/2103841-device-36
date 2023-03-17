@@ -2123,7 +2123,8 @@ body {
   margin-right: 40px;
 }
 
-.modal-legend-name {
+.modal-label-name {
+  display: block;
   font-family: "Rubik", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -2161,7 +2162,7 @@ body {
   width: 360px;
 }
 
-.modal-legend-email {
+.modal-label-email {
   display: block;
   font-family: "Rubik", Arial, sans-serif;
   font-size: 18px;
@@ -2188,6 +2189,7 @@ body {
 
 .modal-fieldset-email:invalid .modal-input-email {
   border: 2px solid #FF3D3D;
+  outline-offset: 0;
 }
 
 .modal-fieldset-email:invalid .modal-input-email-text {
@@ -2195,20 +2197,20 @@ body {
 }
 
 
-.modal-input-email:focus-within {
+.modal-input-state:focus-within {
   outline: solid 2px #AF4FFF;
-  border: solid 2px #FFFFFF;
+  outline-offset: 2px;
 }
 
-.modal-input-email:hover {
+.modal-input-state:hover {
   background-color: #DCDCDC;
 }
 
-.modal-input-email:active {
+.modal-input-state:active {
   background-color: #EBEBEB;
 }
 
-.modal-input-email:disabled {
+.modal-input-state:disabled {
   background-color: #EBEBEB;
   opacity: 0.3;
 }
@@ -2237,7 +2239,7 @@ body {
   margin-right: 40px;
 }
 
-.modal-legend-deliver {
+.modal-label-deliver {
   font-family: "Rubik", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -2265,7 +2267,7 @@ body {
   border: 0;
 }
 
-.modal-legend-amount {
+.modal-amount-title {
   font-family: "Rubik", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -2278,19 +2280,19 @@ body {
   cursor: pointer;
 }
 
-.modal-legend-amount::after {
+.modal-amount-title::after {
   content: url("../images/modal/modal-amount.svg");
   width: 26px;
   height: 26px;
   padding-left: 8px;
 }
 
-.modal-legend-amount:hover + .modal-legend-amount-info,
-.modal-legend-amount:focus + .modal-legend-amount-info{
+.modal-amount-title:hover + .modal-amount-info,
+.modal-amount-title:focus + .modal-amount-info {
   display: block;
 }
 
-.modal-legend-amount-info {
+.modal-amount-info {
   position: absolute;
   z-index: 1;
   padding: 19px 17px 0 19px;
@@ -2300,14 +2302,14 @@ body {
   display: none;
 }
 
-.modal-legend-amount-info::before {
+.modal-amount-info::before {
   position: absolute;
   top: -21px;
   right: 42px;
   content: url("../images/popover/triangle.svg");
 }
 
-.modal-legend-amount-info-text {
+.modal-amount-info-text {
   display: block;
   width: 164px;
   font-family: "Rubik", Arial, sans-serif;
@@ -2323,7 +2325,7 @@ body {
   display: flex;
 }
 
-.modal-legend-button-minus {
+.modal-button-minus {
   position: relative;
   display: block;
   width: 60px;
@@ -2334,7 +2336,7 @@ body {
   cursor: pointer;
 }
 
-.modal-legend-button-minus::before {
+.modal-button-minus::before {
   content: " ";
   position: absolute;
   background-image: url(../images/icons/minus.svg);
@@ -2345,23 +2347,23 @@ body {
   left: 22px;
 }
 
-.modal-legend-button-plus:hover.modal-legend-button-plus::before,
-.modal-legend-button-minus:hover.modal-legend-button-minus::before {
+.modal-button-plus:hover.modal-button-plus::before,
+.modal-button-minus:hover.modal-button-minus::before {
   opacity: 0.6;
 }
 
-.modal-legend-button-plus:active.modal-legend-button-plus::before,
-.modal-legend-button-minus:active.modal-legend-button-minus::before {
+.modal-button-plus:active.modal-button-plus::before,
+.modal-button-minus:active.modal-button-minus::before {
   opacity: 0.3  ;
 }
 
-.modal-legend-button-plus:focus-visible,
-.modal-legend-button-minus:focus-visible {
+.modal-button-plus:focus-visible,
+.modal-button-minus:focus-visible {
   outline: solid 2px #AF4FFF;
 }
 
-.modal-legend-button-plus:disabled,
-.modal-legend-button-minus:disabled {
+.modal-button-plus:disabled,
+.modal-button-minus:disabled {
   background-color: #EBEBEB;
   opacity: 0.3;
 }
@@ -2387,7 +2389,7 @@ body {
 
 
 
-.modal-legend-button-plus {
+.modal-button-plus {
   position: relative;
   display: block;
   width: 60px;
@@ -2398,7 +2400,7 @@ body {
   cursor: pointer;
 }
 
-.modal-legend-button-plus::before {
+.modal-button-plus::before {
   content: " ";
   position: absolute;
   background-image: url(../images/icons/plus.svg);
