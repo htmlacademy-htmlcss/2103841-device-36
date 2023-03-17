@@ -10,7 +10,7 @@
   <body>
     <header class="catalog-header-container page-header">
       <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-      <a class="header-logo-link focus-visible-outline" href="index.html">
+      <a class="catalog-header-logo-link focus-visible-outline" href="index.html">
         <img src="images/icons/logo.svg" width="145" height="36" alt="DEVICE">
       </a>
       <nav class="navigation">
@@ -49,7 +49,9 @@
                         <img class="popover-product-img" src="images/popover/monopod-icon.jpg" width="39" height="43" alt="Иконка любительской селфи-палки.">
                         Любительская <br>селфи-палка
                       </a>
-                      <button class="close-product-button" type="button"></button>
+                      <button class="close-product-button" type="button">
+                        <span class="visually-hidden">убрать товар из корзины</span>
+                      </button>
                     </div>
                   </li>
                   <li class="popover-product-item">
@@ -58,7 +60,9 @@
                         <img class="popover-product-img" src="images/popover/monopod-icon-02.jpg" width="39" height="43" alt="Иконка профессиональньной селфи-палки.">
                         Профессиональная <br>селфи-палка
                       </a>
-                      <button class="close-product-button" type="button"></button>
+                      <button class="close-product-button" type="button">
+                        <span class="visually-hidden">убрать товар из корзины</span>
+                      </button>
                     </div>
                   </li>
                 </ul>
@@ -80,8 +84,7 @@
         <div class="dropdown-and-advantages-container">
           <section class="navigation-dropdown">
             <h2 class="visually-hidden">Выпадающее меню каталога товаров.</h2>
-            <input class="navigation-dropdown-input" type="checkbox" id="navigation-dropdown-input">
-            <label class="navigation-dropdown-button focus-visible-outline" tabindex="0" for="navigation-dropdown-input">Каталог товаров</label>
+            <button class="navigation-dropdown-button focus-visible-outline" type="button">Каталог товаров</button>
             <div class="navigation-dropdown-list-container">
               <ul class="clear-list navigation-dropdown-list">
                 <li class="navigation-dropdown-item">
@@ -171,35 +174,35 @@
                 <li class="catalog-filter-item color-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="black" checked>
-                    <span class="control-mark"></span>
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">Черный</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item color-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="white" checked>
-                    <span class="control-mark"></span>
+                    <input class="visually-hidden control-input" type="checkbox" name="white" checked >
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">Белый</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item color-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="blue">
-                    <span class="control-mark"></span>
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">Синий</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item color-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="red">
-                    <span class="control-mark"></span>
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">Красный</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item color-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="pink">
-                    <span class="control-mark"></span>
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">Розовый</span>
                   </label>
                 </li>
@@ -211,14 +214,14 @@
                 <li class="catalog-filter-item bluetooth-filter-item">
                   <label class="bluetooth-control">
                     <input class="visually-hidden control-input" type="radio" name="bluetooth-option" value="yes" checked>
-                    <span class="bluetooth-control-mark"></span>
+                    <span class="bluetooth-control-mark" tabindex="0"></span>
                     <span class="control-label">Есть</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item bluetooth-filter-item">
                   <label class="bluetooth-control">
                     <input class="visually-hidden control-input" type="radio" name="bluetooth-option" value="no">
-                    <span class="bluetooth-control-mark"></span>
+                    <span class="bluetooth-control-mark" tabindex="0"></span>
                     <span class="control-label">Нет</span>
                   </label>
                 </li>
